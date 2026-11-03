@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Wehan Coombs – CV</title>
+<style>
+  @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: normal; src: url('fonts/eb-garamond-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 400; font-style: italic; src: url('fonts/eb-garamond-latin-400-italic.woff2') format('woff2'); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 500; font-style: normal; src: url('fonts/eb-garamond-latin-500-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'EB Garamond'; font-weight: 600; font-style: normal; src: url('fonts/eb-garamond-latin-600-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-weight: 400; font-style: normal; src: url('fonts/source-sans-3-latin-400-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-weight: 400; font-style: italic; src: url('fonts/source-sans-3-latin-400-italic.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-weight: 600; font-style: normal; src: url('fonts/source-sans-3-latin-600-normal.woff2') format('woff2'); }
+  @font-face { font-family: 'Source Sans 3'; font-weight: 700; font-style: normal; src: url('fonts/source-sans-3-latin-700-normal.woff2') format('woff2'); }
+
+  :root {
+    --ink: #1E3A56;      /* sidebar navy, headings */
+    --ink-2: #284865;    /* portrait fill */
+    --sky: #8FB0CF;      /* accents, bullets, rings */
+    --mist: #D6E0EA;     /* sidebar body text */
+    --mist-2: #A8BDD2;   /* sidebar secondary text */
+    --text: #2A2F37;     /* main body text */
+    --slate: #5E6E7F;    /* dates, roles */
+    --rule: #CBD6E2;     /* hairlines */
+    --gap: #FFE27A;      /* draft highlight: info still needed */
+    --gap-text: #3F3300;
+  }
+
+  @page { size: A4; margin: 0; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--text);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm; height: 297mm;
+    display: grid; grid-template-columns: 68mm 1fr;
+    overflow: hidden; position: relative;
+    break-after: page; page-break-after: always;
+  }
+  .page:last-child { break-after: auto; page-break-after: auto; }
+
+  /* ---------- Sidebar ---------- */
+  .side { background: var(--ink); color: var(--mist); padding: 14mm 8.5mm 12mm 9.5mm; }
+  .side section { margin-bottom: 8mm; }
+  .side h2 {
+    font-family: 'EB Garamond', serif; font-weight: 600; font-size: 14.5pt;
+    color: #fff; margin: 0 0 2.6mm; padding-bottom: 1.6mm;
+    border-bottom: 0.3mm solid rgba(255,255,255,0.2);
+  }
+  .side a { color: inherit; text-decoration: none; }
+  .contact a.site { color: var(--sky); text-decoration: underline; text-underline-offset: 0.5mm; text-decoration-thickness: 0.18mm; }
+  .side ul { margin: 0; padding: 0; list-style: none; }
+
+  .portrait {
+    width: 40mm; height: 40mm; border-radius: 50%;
+    margin: 0 auto 9mm; position: relative;
+    background: var(--ink-2); box-shadow: inset 0 0 0 0.5mm var(--sky);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .portrait img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; object-position: 50% 35%; display: block; box-shadow: 0 0 0 0.7mm var(--sky); }
+  .portrait .mono {
+    font-family: 'EB Garamond', serif; font-weight: 500; font-size: 23pt;
+    color: #EEF3F8; letter-spacing: 0.05em;
+  }
+  .portrait .tag { position: absolute; right: -1mm; bottom: 1mm; font-size: 7.6pt; }
+
+  .contact li { display: flex; gap: 2.6mm; align-items: center; font-size: 9.5pt; margin: 0 0 2.3mm; }
+  .contact svg { width: 3.5mm; height: 3.5mm; stroke: var(--sky); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  .item { margin: 0 0 3mm; }
+  .item .t { font-weight: 600; color: #fff; font-size: 9.6pt; line-height: 1.3; }
+  .item .s { font-size: 8.9pt; color: var(--mist-2); line-height: 1.4; margin-top: 0.4mm; }
+
+  .side .dots li { position: relative; padding-left: 3.8mm; font-size: 9.5pt; line-height: 1.38; margin-bottom: 2.2mm; }
+  .side .dots li::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 1.3mm; height: 1.3mm; border-radius: 50%; background: var(--sky); }
+  .side p { font-size: 9.3pt; line-height: 1.42; margin: 0 0 2.4mm; }
+
+  /* ---------- Main column ---------- */
+  main { padding: 16mm 13mm 12mm 12mm; }
+  .name-block { padding-bottom: 6mm; margin-bottom: 1mm; border-bottom: 0.35mm solid var(--rule); }
+  h1 {
+    font-family: 'EB Garamond', serif; font-weight: 500; font-size: 34pt;
+    color: var(--ink); margin: 0; line-height: 1; letter-spacing: -0.005em;
+  }
+  .role-line { font-size: 11.8pt; font-weight: 600; color: #4C6A89; margin: 2.2mm 0 0; }
+
+  h2.sec {
+    font-family: 'EB Garamond', serif; font-weight: 600; font-size: 16.8pt;
+    color: var(--ink); margin: 8.6mm 0 3.6mm;
+    display: flex; align-items: center; gap: 3mm;
+  }
+  h2.sec::after { content: ""; flex: 1; border-top: 0.3mm solid var(--rule); }
+
+  main p { font-size: 10.4pt; line-height: 1.52; margin: 0; }
+
+  .entry { margin-bottom: 6mm; }
+  .entry-head { display: flex; justify-content: space-between; align-items: baseline; gap: 4mm; }
+  .entry-head h3 { font-size: 11.3pt; font-weight: 700; margin: 0; color: var(--text); }
+  .dates { font-size: 9.6pt; color: var(--slate); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .entry-role { font-size: 10pt !important; font-style: italic; color: var(--slate); margin: 0.6mm 0 2mm !important; }
+
+  main ul { margin: 0; padding: 0; list-style: none; }
+  main li { position: relative; padding-left: 4.4mm; font-size: 10.2pt; line-height: 1.5; margin-bottom: 1.8mm; }
+  main li::before { content: ""; position: absolute; left: 0.6mm; top: 0.6em; width: 1.5mm; height: 1.5mm; border-radius: 50%; background: var(--sky); }
+  main li b { font-weight: 700; color: var(--ink); }
+
+  .approach {
+    font-family: 'EB Garamond', serif !important; font-size: 13.2pt !important;
+    line-height: 1.42 !important; color: #33404E;
+    padding-left: 4.5mm; border-left: 0.8mm solid var(--sky);
+  }
+
+  .mini { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 2.6mm; border-bottom: 0.35mm solid var(--rule); }
+  .mini .nm { font-family: 'EB Garamond', serif; font-weight: 500; font-size: 15.5pt; color: var(--ink); }
+
+  .refs { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm 7mm; }
+  .ref .nm { font-weight: 700; font-size: 10.4pt; color: var(--text); }
+  .ref .r { font-size: 9.6pt; color: var(--slate); line-height: 1.38; margin-top: 0.4mm; }
+  .ref .c { font-size: 9.6pt; line-height: 1.38; margin-top: 0.8mm; }
+  .ref a { color: inherit; text-decoration: none; }
+
+  .qr { display: block; width: 30mm; height: 30mm; padding: 3mm; background: #fff; border-radius: 2.5mm; margin-top: 1mm; }
+  .qrlink { margin-top: 2.5mm !important; font-size: 9pt !important; }
+  .qrlink a { color: #fff; text-decoration: underline; text-underline-offset: 0.6mm; }
+  .qr img { display: block; width: 100%; height: 100%; }
+
+  /* ---------- Draft markers for missing info ---------- */
+  .gap {
+    background: var(--gap); color: var(--gap-text); border-radius: 1.2mm;
+    padding: 0.15mm 1.3mm; font-weight: 600; font-style: normal; white-space: nowrap;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  }
+  .n {
+    display: inline-block; min-width: 3.5mm; height: 3.5mm; line-height: 3.5mm;
+    border-radius: 50%; background: var(--ink); color: #fff;
+    font-size: 6.4pt; font-weight: 700; text-align: center;
+    margin-left: 1.1mm; vertical-align: 0.3mm;
+  }
+</style>
+<style>
+  /* polished serif body, justified */
+  body { font-family: 'EB Garamond', serif; font-feature-settings: "kern","liga","onum"; }
+  b, strong, .item .t, .entry-head h3, .ref .nm, main li b { font-weight: 600 !important; }
+  .role-line { font-size: 12.6pt; font-weight: 500; font-style: italic; }
+  main p { font-size: 11.3pt; line-height: 1.42; text-align: justify; hyphens: auto; }
+  main li { font-size: 11pt; line-height: 1.38; text-align: left; }
+  .entry-head h3 { font-size: 12.2pt; }
+  .dates { font-size: 10.4pt; font-feature-settings: "lnum","tnum"; }
+  .entry-role { font-size: 10.8pt !important; }
+  .side .dots li, .contact li { font-size: 10.2pt; }
+  .side p { font-size: 10pt; text-align: left; }
+  .item .t { font-size: 10.4pt; }
+  .item .s { font-size: 9.7pt; }
+  .ref .nm { font-size: 11pt; } .ref .r, .ref .c { font-size: 10.2pt; }
+  .page:first-child h2.sec { margin: 6.6mm 0 3mm; }
+  .page:first-child .entry { margin-bottom: 4.5mm; }
+  .page:first-child main li { margin-bottom: 1.3mm; }
+</style>
+</head>
+<body>
+
+<!-- ======================= PAGE 1 ======================= -->
+<div class="page">
+  <aside class="side">
+    <div class="portrait">
+      <img src="headshot.png" alt="">
+    </div>
+
+    <section>
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>
+          <a href="tel:+27823271104">082 327 1104</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <a href="mailto:wehancoombs@gmail.com">wehancoombs@gmail.com</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <span>Portfolio: <a class="site" href="https://wehancoombs.github.io/ves310-portfolio/">wehancoombs.github.io/ves310-portfolio ↗</a></span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Pretoria East, Gauteng
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Registration</h2>
+      <div class="item">
+        <div class="t">SACE provisional registration</div>
+        <div class="s">Student teacher, 2026</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Qualifications</h2>
+      <div class="item">
+        <div class="t">PGCE (FET Phase)</div>
+        <div class="s">University of Pretoria</div>
+        <div class="s">In progress</div>
+      </div>
+      <div class="item">
+        <div class="t">TESOL/TEFL Certificate</div>
+        <div class="s">120 hours, 2026</div>
+      </div>
+      <div class="item">
+        <div class="t">PhD in Philosophy</div>
+        <div class="s">UP, 2023</div>
+      </div>
+      <div class="item">
+        <div class="t">MA in Philosophy</div>
+        <div class="s">UP, 2016, cum laude</div>
+      </div>
+      <div class="item">
+        <div class="t">BA Honours in Philosophy</div>
+        <div class="s">UP, 2012, cum laude</div>
+      </div>
+      <div class="item">
+        <div class="t">BA Humanities: English Literature and Philosophy</div>
+        <div class="s">UP, 2010</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <div class="item"><div class="t">English</div><div class="s">Home language</div></div>
+      <div class="item"><div class="t">Afrikaans</div><div class="s">Fluent</div></div>
+      
+    </section>
+  </aside>
+
+  <main>
+    <header class="name-block">
+      <h1>Dr Wehan M. Coombs</h1>
+      <p class="role-line">English Home Language teacher, FET Phase</p>
+    </header>
+
+    <h2 class="sec">Profile</h2>
+    <p>English teacher with a background in literature and philosophy and 15 years of university teaching experience. Taught Grade 10 and 11 English Home Language at Abbotts College and English First Additional Language at Hoërskool Garsfontein during PGCE practicums in 2026. Builds lessons on respectful, trusting relationships and lively discussion, treating learners as real thinking partners. Teaches what no machine can do for a learner: reading closely, arguing honestly and thinking in dialogue.</p>
+
+    <h2 class="sec">School teaching</h2>
+    <div class="entry">
+      <div class="entry-head"><h3>Abbotts College Pretoria East</h3><span class="dates">Jul – Sep 2026</span></div>
+      <p class="entry-role">PGCE teaching practicum</p>
+      <ul>
+        <li>Planned and taught Grade 10 and 11 English Home Language over seven weeks, including <i>Macbeth</i> and <i>The Tempest</i>, taking charge of classes with guidance from a mentor teacher</li>
+        <li>Used regular informal assessments to check what learners had understood</li>
+        <li>Mentor assessment: 95/100, with full marks for classroom competencies; 98/100 for a lesson observed by my university mentor</li>
+        <li>Community engagement: tended the community garden, played a key role in organising a Book Day (a take-one-leave-one book donation drive) and helped with a shoe donation outreach</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-head"><h3>Hoërskool Garsfontein</h3><span class="dates">May 2026</span></div>
+      <p class="entry-role">PGCE teaching practicum</p>
+      <ul>
+        <li>Planned and taught Grade 10 and 11 English First Additional Language grammar and poetry over three weeks</li>
+        <li>Community engagement: helped with the school’s <i>Kersfees in die Winter</i> charity drive</li>
+      </ul>
+    </div>
+
+    <h2 class="sec">University teaching</h2>
+    <div class="entry">
+      <div class="entry-head"><h3>University of Pretoria</h3><span class="dates">2010 – 2026</span></div>
+      <p class="entry-role">Tutor, Assistant Lecturer and Head Lecturer, Department of Philosophy</p>
+      <ul>
+        <li>Lectured undergraduate and honours modules, including first-year classes of more than 500 students</li>
+        <li>Designed modules from scratch, wrote study guides and chose readings</li>
+        <li>Designed marking rubrics and marked thousands of essays and exams</li>
+        <li>Trained and supervised teams of tutors</li>
+        <li>Taught online and hybrid classes on ClickUP and Blackboard</li>
+      </ul>
+    </div>
+  </main>
+</div>
+
+<!-- ======================= PAGE 2 ======================= -->
+<div class="page">
+  <aside class="side">
+
+    <section>
+      <h2>Teaching strengths</h2>
+      <ul class="dots">
+        <li>Dynamic, engaged classrooms</li>
+        <li>Question-led class discussion</li>
+        <li>Close reading of literature and poetry</li>
+        <li>Essay and argument writing</li>
+        <li>Lesson planning and module design</li>
+        <li>Rubric design and marking</li>
+        <li>Online and hybrid teaching</li>
+        <li>Training and mentoring tutors</li>
+        <li>AI-aware teaching and assessment</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Full resume</h2>
+      <p>Every module taught, research, conference papers and my full teaching portfolio. Scan or click:</p>
+      <a class="qr" href="https://docs.google.com/document/d/1uBnQTpyejNyltP889HYTxGxJh2-pD4FMiTWkkgGSCeg/view"><img src="qr.svg" alt="QR code linking to the full resume"></a>
+      <p class="qrlink"><a href="https://docs.google.com/document/d/1uBnQTpyejNyltP889HYTxGxJh2-pD4FMiTWkkgGSCeg/view">Open the full resume online</a></p>
+    </section>
+  </aside>
+
+  <main>
+    <header class="mini">
+      <span class="nm">Dr Wehan M. Coombs</span>
+    </header>
+
+    <h2 class="sec">Teaching approach</h2>
+    <p class="approach">Learners do their best thinking when they feel known and respected. I start from what they already know, then set a challenge they reason through together in discussion, and end by applying the new skill to their own lives, so they leave with ideas they can call their own.</p>
+
+    <h2 class="sec">Extramurals</h2>
+    <ul>
+      <li><b>Squash:</b> League player at Irene Squash Club; keen to help coach or run a school team.</li>
+      <li><b>Debating and public speaking:</b> Can coach debaters and adjudicate.</li>
+      <li><b>General duties:</b> Glad to help with sport (I know the rules of most major codes, from cricket and rugby to soccer and tennis), events and supervision wherever needed.</li>
+      <li><b>Student society:</b> Long-time member of Footnotes, the UP philosophy society (2010–2025), helping to organise talks and film screenings.</li>
+    </ul>
+
+    <h2 class="sec">Professional development</h2>
+    <ul>
+      <li>120-hour TESOL/TEFL certificate, World TESOL Academy (2026), covering grammar, lesson planning and classroom management</li>
+      <li>Attended Teaching and Learning Week sessions at the University of Pretoria on AI in schools and on indigenous language literacy (2026)</li>
+      <li>Presented 13 research papers at philosophy conferences, colloquia and workshops since 2012 (see the full resume for details)</li>
+    </ul>
+
+    <h2 class="sec">References</h2>
+    <div class="refs">
+      <div class="ref">
+        <div class="nm">Heloïse van der Spuy</div>
+        <div class="r">Mentor teacher, Hoërskool Garsfontein</div>
+        <div class="c">012 998 6096<br><a href="mailto:heloise@garsies.co.za">heloise@garsies.co.za</a></div>
+      </div>
+      <div class="ref">
+        <div class="nm">Eben van Dien</div>
+        <div class="r">Mentor teacher, Abbotts College Pretoria East</div>
+        <div class="c">012 809 1208<br><a href="mailto:evdien@abbotts.co.za">evdien@abbotts.co.za</a></div>
+      </div>
+      <div class="ref">
+        <div class="nm">Prof. Emma Ruttkamp-Bloem</div>
+        <div class="r">Head of the Department of Philosophy, University of Pretoria</div>
+        <div class="c"><a href="mailto:emma.ruttkamp-bloem@up.ac.za">emma.ruttkamp-bloem@up.ac.za</a></div>
+      </div>
+      <div class="ref">
+        <div class="nm">Dr Mitchell Black</div>
+        <div class="r">Colleague and research collaborator, University of Pretoria</div>
+        <div class="c"><a href="mailto:mblackmitchell@gmail.com">mblackmitchell@gmail.com</a></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
