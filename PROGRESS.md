@@ -42,6 +42,5 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 **Still needed from Wehan** (see the yellow boxes on each page)
 - Section C video (3–5 min).
 - (Done 2026-11-03: Lesson 1 = The Poet with its lesson notes as LTSM 1; Lesson 2 = Macbeth essay preparation with the revision sheet as LTSM 2; the Tempest lesson kept as an extra.)
-- The whole assessment task (B3).
-- The toolkit, activity, low-resource version and responsible-AI note (B4).
-- Confirmation of the philosophy wording, references and AI acknowledgement.
+- (Done 2026-11-03: B3 = Wehan's Kahoot revision quiz with memo; B4 = toolkit, Tempest Gauntlet activity, paper version, responsible-AI note.)
+- Wehan to check the drafted text listed in `SITE-TEXT.md` and reply in chat.
