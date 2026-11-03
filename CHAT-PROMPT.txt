@@ -1,0 +1,80 @@
+Copy everything below this line and paste it into a chat.
+========================================================
+
+I am a PGCE student teacher (English Home Language, FET Phase) in South Africa, finishing a professional teaching portfolio website for my VES 310 exam equivalent. It will be read by my lecturer and by schools I apply to. An AI helped me build the site; the teaching content must be my own work in my own voice. Some passages below were drafted by the AI from my own lesson plans and notes, so I need to check them, cut what does not sound like me, and fix anything wrong.
+
+For each numbered section below, give me back a final version in my voice: plain, direct, warm, no corporate filler, South African school context (CAPS, Grade 10 and 11, Abbotts College Pretoria East, Hoërskool Garsfontein). Keep the facts exactly as given; do not invent experience, qualifications or results. Keep each section about the same length or shorter. Label each answer with its section number and heading so I can paste it back.
+
+Facts about me, for context: PhD in Philosophy (University of Pretoria, 2023), 15 years teaching philosophy at university, PGCE in progress 2026, TESOL/TEFL certificate, SACE provisional registration. In 2026 I taught Grade 10 and 11 English Home Language at Abbotts College Pretoria East for seven weeks (mentor assessment 95/100; an observed Grade 11 poetry lesson on "The Poet" from A Midsummer Night's Dream scored 98/100) and Grade 10 English First Additional Language at Hoërskool Garsfontein for three weeks.
+
+--- SECTION 1 · Profile page: teaching philosophy (stitched from my CV and website; check it reads as one piece) ---
+
+Learners do their best thinking when they feel known and respected. I start from what they already know, then set a challenge they reason through together in discussion, and end by applying the new skill to their own lives, so they leave with ideas they can call their own.
+
+I plan most lessons as a three-part arc. First, I activate what learners already know, often through a vivid scenario or a playful dilemma resonant with their own lives. Then we move to an application phase, a scaffolded exercise that requires them to try something new and potentially fail. Finally, the newly developed skill is actualised by connecting it to some concrete project or real issue in the world that they can apply it to.
+
+Reading difficult texts closely, building arguments and writing clear, well-structured essays are foundational skills in philosophy, and they make up a large part of what English Home Language asks of learners in Grades 10 to 12. In the classroom I rely on continual informal assessment: quick questioning, short written tasks and quizzes, which lets me adjust a lesson while it is still happening.
+
+Generative AI can now write the kind of essay most classrooms use to teach and to assess. In my classrooms, thinking happens out loud: discussion, Socratic questioning, arguments defended on their feet. Writing is taught as thinking, drafted, talked about and revised with feedback. AI is on the table, openly, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class.
+
+I teach because I have seen what happens when students realise they can think for themselves, and that transformation carries into the rest of their lives. I bring fifteen years of teaching experience to any school or department, along with a collaborative spirit, high professional standards and genuine care. Above all, I keep learning from the people I teach.
+
+--- SECTION 2 · References page: AI-use acknowledgement (AI-drafted) ---
+
+This portfolio website was built with the assistance of Claude (Anthropic), an AI coding assistant, under my direction: it set up the page structure, navigation and styling, and converted my existing documents into web pages. All teaching content on this site, including my profile, teaching philosophy, lesson plans, learning and teaching support materials, assessment task and reflections, is my own work, written by me or transferred from the lesson plans I wrote and taught during my 2026 teaching practicums. Where an AI tool was used in preparing any individual resource, this is stated on that resource.
+
+I have checked all content for accuracy. No learner names, images or work appear anywhere on this site.
+
+--- SECTION 3 · Lesson 1 ("The Poet", Grade 11 poetry): differentiation (AI-drafted from my plan) ---
+
+The device hunt is scaffolded so that every learner can contribute: the clue key narrows each search to a few lines and names how many devices to find, the freebie gives weaker groups an immediate first answer, and mixed groups let stronger readers model the explanation of a device for the others. Answers are scored per correct device, so partial success counts. The thought experiments and the dilemma give learners who struggle with abstract terminology a concrete way in, while the open discussion lets stronger learners stretch into the philosophical layer of the poem. Technology is left out so that no learner is disadvantaged by access to a device.
+
+--- SECTION 4 · Lesson 2 (Macbeth literary-essay preparation, Grade 10): differentiation (AI-drafted from my plan) ---
+
+The scene is read aloud and explained section by section, so that learners who struggle with Shakespearian language are not left behind, while the agency debate lets stronger learners argue at a higher level from the same text. The PEEL structure gives every learner a fixed scaffold for the essay, and the revision sheet puts the plan, the quotation bank and the essay questions on one page for learners who need something concrete to study from. Diagnostic questioning during the lesson shows me who still needs the "divine right of kings" idea explained again before the assessment.
+
+--- SECTION 5 · Assessment page (my Grade 11 Kahoot revision quiz, 26 questions in 6 rounds, 36 marks): learner instructions (AI-drafted) ---
+
+1. You will work in teams of three or four. Choose a team name and one device per team. Join the Kahoot game with the PIN on the board.
+2. There are six rounds: three poems ("For Oom Piet", "The Herb Garden", "The Poet"), film literacy, philosophy and the screen, and The Tempest Acts 1 and 2.
+3. Each question is multiple choice with one correct answer. Read the whole question before you answer. You have 30 seconds per question.
+4. Bonus questions at the end of a round count double. Every question in the final Tempest round, the Gauntlet, counts double.
+5. Discuss each answer in your team before you tap. Talk, but do not shout the answer across the room.
+6. No notes and no textbook. This is revision: it shows you and me what you already know and what we still need to work on.
+7. The winning team earns a Sleep Token: the right to rest your head on the desk for one future lesson, no questions asked.
+
+--- SECTION 6 · Assessment page: feedback and differentiation (AI-drafted) ---
+
+Feedback. The feedback is immediate and whole-class: after every question Kahoot shows the correct answer and how many teams chose each option, and I stop to explain any question that more than a third of the room got wrong, going back to the line of the poem or the scene of the play. The round scores tell me which text or skill needs re-teaching before the formal assessment, and I open the next lesson with that. Teams talk through every answer before they commit, so learners also give each other feedback as they go.
+
+Differentiation. Teams are mixed, so that stronger readers explain their reasoning to weaker ones and every learner takes part without being exposed. Questions are graded within each round from recall (which play, which device) to interpretation (irony, structure), and the double-point bonus questions stretch the strongest learners without punishing the rest. Thirty seconds per question is enough for discussion but short enough to keep attention. The quiz needs no reading of long passages, which helps learners who read slowly, and the Sleep Token prize keeps the stakes playful. For a learner who cannot take part on a device, the same quiz runs on paper.
+
+--- SECTION 7 · Technology page: digital toolkit, five tools (AI-drafted from what I used in 2026) ---
+
+Kahoot. Purpose: live team quizzes for revision and informal assessment; every learner answers every question, the leaderboard keeps energy high, and the results show me at once which text or skill needs re-teaching. Limitation: needs internet and a device per team, and the time pressure rewards speed over careful reading, so I use it for revision, not for teaching new material.
+
+PowerPoint in presenter mode. Purpose: teacher-led visual lessons and in-class games; for the film-language pub quiz I read each scenario aloud from the presenter notes before the answer slide appeared, so the slides paced the lesson instead of replacing me. Limitation: needs a projector and a laptop, and slides tempt a teacher to lecture; without deliberate pauses for discussion the lesson becomes passive.
+
+Subtitled video clips (VLC and a projector). Purpose: putting faces and voices to a Shakespeare text before and after reading it; a subtitled supercut of The Tempest let learners see professional actors decode the Early Modern English they had struggled with. Limitation: film clips are copyrighted, so they can be shown in class but not shared or published, and a clip only works if the class has already done the reading.
+
+Google Docs. Purpose: writing and sharing lesson notes, resources and class-built lists (for example the "levelling up your English" resource list the Grade 11s built together), with one link for the whole cohort. Limitation: learners need an account and a connection to edit, and shared documents need clear rules or a few learners do all the work.
+
+Generative AI assistant (ChatGPT or Claude). Purpose: a planning aid for the teacher: drafting multiple-choice distractors, checking a lesson sequence for gaps, and producing a first draft of a resource that I then edit and verify against the text. Limitation: it invents plausible but wrong quotations, line references and facts, so nothing it produces goes to learners unchecked, and learner work or personal information is never pasted into it.
+
+--- SECTION 8 · Technology page: responsible AI, privacy, verification and accessibility (first paragraph is mine; the rest AI-drafted) ---
+
+Responsible use. Generative AI can now write the kind of essay most classrooms use to teach and to assess. My answer is not to ban it but to teach what no model can do for a learner: reading closely, arguing honestly and thinking in dialogue. In my classrooms AI is on the table, openly. We talk about what it is good and bad at, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class. With the Grade 11s the closing debate was whether AI should be deleted forever, argued through four ethical frameworks.
+
+Privacy. I use AI tools as a planning aid for myself, never as a place for learner data. No learner names, marks, work or personal information go into any AI tool, and learners are not asked to create accounts on AI services for class work. Quiz platforms such as Kahoot are used with team names, not real names.
+
+Verification. Anything an AI tool helps to draft is checked against the prescribed text before it reaches learners: quotations and line references are confirmed in the book, facts are checked against the textbook or a reliable source, and distractors in multiple-choice questions are tested so that only one answer is defensible. Where AI was used in preparing a resource, the resource says so.
+
+Accessibility. Every digital activity here has a version that needs no device, no connection and at most one printed page, so no learner is excluded by access. Video clips are shown with subtitles, slides use large text and high contrast, and quiz questions are read aloud as well as shown. Learners who need more time or a quieter setting can do the same quiz on paper at their own pace.
+
+--- SECTION 9 · Home page: a short professional introduction (optional: if you can make this tighter in my voice, do) ---
+
+English teacher with a background in literature and philosophy and 15 years of university teaching experience. Taught Grade 10 and 11 English Home Language at Abbotts College and English First Additional Language at Hoërskool Garsfontein during PGCE practicums in 2026. Builds lessons on respectful, trusting relationships and lively discussion, treating learners as real thinking partners. Teaches what no machine can do for a learner: reading closely, arguing honestly and thinking in dialogue.
+
+--- END ---
+
+After the nine sections, also write me a script for a 3 to 5 minute video called "Professional Introduction and Teaching Showcase – Wehan Coombs", recorded on my phone talking to camera with a few slides of my resources, in this order: (1) who I am, why I teach English, the strengths I bring to a school, about 45 seconds; (2) my teaching approach with ONE concrete example from a lesson above, about 1 minute; (3) how my understanding and practice grew through my PGCE year and the two practicums, with one real challenge or strength and how it will shape my teaching, about 1 minute 30; (4) a short, warm close, about 20 seconds. Plain and personal, not a CV reading. Give rough timings and a one-line note of what to show on screen for each part. Ask me one or two questions first if you need a real challenge or growth moment from me.

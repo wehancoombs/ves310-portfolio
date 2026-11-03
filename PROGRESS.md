@@ -44,3 +44,12 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 - (Done 2026-11-03: Lesson 1 = The Poet with its lesson notes as LTSM 1; Lesson 2 = Macbeth essay preparation with the revision sheet as LTSM 2; the Tempest lesson kept as an extra.)
 - (Done 2026-11-03: B3 = Wehan's Kahoot revision quiz with memo; B4 = toolkit, Tempest Gauntlet activity, paper version, responsible-AI note.)
 - Wehan to check the drafted text listed in `SITE-TEXT.md` and reply in chat.
+
+---
+
+## 2026-11-03 (evening): redesign
+
+**Done**
+- Rebuilt the home page as one visual page in the style of the personal site: dark theme with a light toggle, headshot in a gold ring, stat cards that open the assessors' quotes, two video frames, profile cards and the "arc of a lesson" drawing, a bookshelf of lesson plans, six round tokens for the quiz, tool chips and activity tiles. Everything opens in a slide-in pop-out; the detail pages stay as printable full versions.
+- `CHAT-PROMPT.txt`: a copy-paste prompt with every drafted passage, for revising the text in a chat.
+
