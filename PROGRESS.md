@@ -41,9 +41,7 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 
 **Still needed from Wehan** (see the yellow boxes on each page)
 - Section C video (3–5 min).
-- Decision on the two teaching areas (poetry + drama are both Literature).
-- LTSM 2 for the Tempest lesson, downloadable. (LTSM 1, the Poet lesson notes, is done: filled on 2026-11-03 from WIL plan 12 and the LTSM bundle.)
-- Differentiation note for Lesson 2.
+- (Done 2026-11-03: Lesson 1 = The Poet with its lesson notes as LTSM 1; Lesson 2 = Macbeth essay preparation with the revision sheet as LTSM 2; the Tempest lesson kept as an extra.)
 - The whole assessment task (B3).
 - The toolkit, activity, low-resource version and responsible-AI note (B4).
 - Confirmation of the philosophy wording, references and AI acknowledgement.
