@@ -286,16 +286,17 @@ footer { border-top: 1px solid var(--line); background: var(--bg-2); }
 .photos figcaption { font-size: 13px; color: var(--text-2); padding: 8px 4px 2px; }
 
 /* ---------- Tool cards ---------- */
-.tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; }
-.tool { all: unset; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 18px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; transition: transform .3s var(--ease), border-color .3s; }
+.tools { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+@media (max-width: 900px) { .tools { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); } }
+.tool { all: unset; box-sizing: border-box; cursor: pointer; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; transition: transform .3s var(--ease), border-color .3s; }
 .tool:hover, .tool:focus-visible { transform: translateY(-4px); border-color: var(--accent); }
-.tool .ico { width: 56px; height: 56px; border-radius: 14px; background: color-mix(in srgb, var(--accent) 14%, transparent); display: grid; place-items: center; }
-.tool .ico svg { width: 30px; height: 30px; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.tool b { font: 500 19px/1.2 var(--serif); color: var(--text); }
-.tool span { font-size: 13.5px; color: var(--text-2); line-height: 1.4; }
+.tool .ico { width: 40px; height: 40px; border-radius: 11px; margin-bottom: 2px; background: color-mix(in srgb, var(--accent) 14%, transparent); display: grid; place-items: center; }
+.tool .ico svg { width: 22px; height: 22px; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.tool b { font: 500 17px/1.2 var(--serif); color: var(--text); }
+.tool span { font-size: 12.5px; color: var(--text-2); line-height: 1.35; }
 
 /* ---------- One activity, two classrooms ---------- */
-.classroom { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px 20px; margin-top: 28px; }
+.classroom { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px 18px; margin-top: 20px; }
 .switch-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
 .switch { all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; }
 .switch .knob { width: 54px; height: 30px; border-radius: 999px; background: var(--make); position: relative; transition: background .3s; flex: none; }
@@ -318,12 +319,13 @@ footer { border-top: 1px solid var(--line); background: var(--bg-2); }
 @media (max-width: 700px) { .cls-steps { grid-template-columns: 1fr; } }
 
 /* ---------- Mini cards ---------- */
-.minis { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
-.mini { all: unset; box-sizing: border-box; cursor: pointer; display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; transition: border-color .3s, transform .3s var(--ease); }
+.minis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+@media (max-width: 760px) { .minis { grid-template-columns: repeat(2, 1fr); } }
+.mini { all: unset; box-sizing: border-box; cursor: pointer; display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; transition: border-color .3s, transform .3s var(--ease); }
 .mini:hover, .mini:focus-visible { border-color: var(--accent); transform: translateY(-3px); }
-.mini svg { width: 28px; height: 28px; flex: none; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.mini b { display: block; font: 500 17px var(--serif); color: var(--text); }
-.mini span { font-size: 13.5px; color: var(--text-2); line-height: 1.4; }
+.mini svg { width: 22px; height: 22px; margin-top: 2px; flex: none; stroke: var(--accent); fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.mini b { display: block; font: 500 16px var(--serif); color: var(--text); }
+.mini span { font-size: 12.5px; color: var(--text-2); line-height: 1.35; }
 
 /* ---------- Inside pop-outs: panels and numbered steps ---------- */
 .sheet { width: min(760px, 100%); }
