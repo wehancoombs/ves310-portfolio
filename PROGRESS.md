@@ -61,4 +61,5 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 - Assessment: the Kahoot quiz is now playable on the page (`assets/quiz.js`): pick a round or all six, 30-second timer, four coloured answer tiles, points for speed, double points on bonus and Gauntlet questions, a result podium. Three podium photos from the three classes (learner nicknames blurred) sit beside it as evidence.
 - Technology: five tool cards; a switch that flips one illustration between the Kahoot version (projector and phones) and the chalkboard version (A B C D, tally scoreboard, paper letters) with three steps for each; four small cards for the responsible-AI note.
 - Pop-outs are wider; tool pop-outs show purpose and limitation side by side; instructions use numbered steps.
+- Later the same day: podium photos became a swipeable gallery; Profile and Lesson pop-outs are wider and visual (timeline, badges, pull quotes, lesson-at-a-glance bars, download cards, school cards); the five tools and the four responsible-AI cards open centred hover cards with their own content (hover to peek, click to pin).
 

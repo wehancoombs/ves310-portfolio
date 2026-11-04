@@ -166,11 +166,16 @@
       <div class="kq" id="kq"><div class="kq-board"><p class="kq-eyebrow">Play it</p><h3>The quiz, as the learners saw it</h3><p>Loading…</p></div></div>
       <div>
         <p class="eyebrow">In the classroom</p>
-        <p class="small">The podium at the end of the Tempest Gauntlet in three Grade 11 classes, September 2026, photographed off the projector. Learner nicknames blurred.</p>
-        <div class="photos photos-col">
-          <figure><img src="assets/img/podium-1.jpg" alt="Kahoot podium on the classroom projector: the top three teams of the Grade 11 Gauntlet, names blurred" loading="lazy"><figcaption>Class 1 · winner on 17 372 points</figcaption></figure>
-          <figure><img src="assets/img/podium-2.jpg" alt="Kahoot podium with three avatars on the classroom screen, names blurred" loading="lazy"><figcaption>Class 2 · winner on 17 914 points</figcaption></figure>
-          <figure><img src="assets/img/podium-3.jpg" alt="Kahoot podium projected onto the whiteboard, names blurred" loading="lazy"><figcaption>Class 3 · winner on 17 583 points</figcaption></figure>
+        <p class="small">The podium at the end of the Tempest Gauntlet in three Grade 11 classes, September 2026, photographed off the projector. Learner nicknames blurred. Swipe or use the arrows.</p>
+        <div class="gallery" id="podiums" aria-roledescription="carousel" aria-label="Podium photos">
+          <div class="gal-track" tabindex="0">
+            <figure class="gal-slide"><img src="assets/img/podium-1.jpg" alt="Kahoot podium on the classroom projector: the top three teams of the Grade 11 Gauntlet, names blurred"><figcaption>Class 1 · winner on 17 372 points</figcaption></figure>
+            <figure class="gal-slide"><img src="assets/img/podium-2.jpg" alt="Kahoot podium with three avatars on the classroom screen, names blurred"><figcaption>Class 2 · winner on 17 914 points</figcaption></figure>
+            <figure class="gal-slide"><img src="assets/img/podium-3.jpg" alt="Kahoot podium projected onto the whiteboard, names blurred"><figcaption>Class 3 · winner on 17 583 points</figcaption></figure>
+          </div>
+          <button class="gal-btn gal-prev" type="button" aria-label="Previous photo">‹</button>
+          <button class="gal-btn gal-next" type="button" aria-label="Next photo">›</button>
+          <div class="gal-dots" role="tablist"><button type="button" class="on" aria-label="Photo 1"></button><button type="button" aria-label="Photo 2"></button><button type="button" aria-label="Photo 3"></button></div>
         </div>
       </div>
     </div>
@@ -189,13 +194,13 @@
 <section class="chapter" id="technology">
   <div class="wrap">
     <div class="ch-head"><span class="ch-n">B4</span><h2>Technology</h2><span class="ch-sub">Five tools, one activity, two classrooms.</span></div>
-    <p class="eyebrow">Toolkit · tap a tool for what it is for and where it falls short</p>
+    <p class="eyebrow">Toolkit · hover or tap a tool for what it is for and where it falls short</p>
     <div class="tools">
-      <button class="tool" type="button" data-sheet="kahoot"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span><b>Kahoot</b><span>Live team quizzes for revision</span></button>
-      <button class="tool" type="button" data-sheet="ppt"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8"/></svg></span><b>PowerPoint</b><span>Presenter mode, so slides pace the lesson</span></button>
-      <button class="tool" type="button" data-sheet="video"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M3 7l3-4 4 4M10 3l4 4M14 3l4 4"/></svg></span><b>Subtitled clips</b><span>Faces and voices for a Shakespeare text</span></button>
-      <button class="tool" type="button" data-sheet="docs"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h8M9 16h8"/></svg></span><b>Google Docs</b><span>One link for the whole cohort</span></button>
-      <button class="tool" type="button" data-sheet="ai"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/></svg></span><b>AI assistant</b><span>A planning aid, checked before learners see it</span></button>
+      <button class="tool" type="button" data-pop="kahoot"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></span><b>Kahoot</b><span>Live team quizzes for revision</span></button>
+      <button class="tool" type="button" data-pop="ppt"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M12 16v4M8 20h8"/></svg></span><b>PowerPoint</b><span>Presenter mode, so slides pace the lesson</span></button>
+      <button class="tool" type="button" data-pop="video"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M3 7l3-4 4 4M10 3l4 4M14 3l4 4"/></svg></span><b>Subtitled clips</b><span>Faces and voices for a Shakespeare text</span></button>
+      <button class="tool" type="button" data-pop="docs"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M9 12h8M9 16h8"/></svg></span><b>Google Docs</b><span>One link for the whole cohort</span></button>
+      <button class="tool" type="button" data-pop="ai"><span class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/><path d="M19 15l1 2 2 1-2 1-1 2-1-2-2-1 2-1z"/></svg></span><b>AI assistant</b><span>A planning aid, checked before learners see it</span></button>
     </div>
 
     <div class="classroom" id="classroom">
@@ -264,12 +269,12 @@
       <p class="actions"><button class="btn ghost" type="button" data-sheet="plugged">Full instructions · plugged in</button> <button class="btn ghost" type="button" data-sheet="unplugged">Full instructions · unplugged</button> <a class="btn ghost" href="materials/Wehan-Coombs-Grade-11-Revision-Quiz-Kahoot-Import.xlsx">Kahoot import · Excel</a></p>
     </div>
 
-    <p class="eyebrow" style="margin-top:28px">Responsible AI · tap for the full note</p>
+    <p class="eyebrow" style="margin-top:28px">Responsible AI · hover or tap a card</p>
     <div class="minis" style="margin-top:0">
-      <button class="mini" type="button" data-sheet="responsible"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><div><b>Use</b><span>AI is on the table, openly. I teach what no model can do for a learner.</span></div></button>
-      <button class="mini" type="button" data-sheet="responsible"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>Privacy</b><span>No learner names, marks or work ever go into an AI tool.</span></div></button>
-      <button class="mini" type="button" data-sheet="responsible"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><div><b>Verify</b><span>Every quotation, line reference and fact is checked in the book first.</span></div></button>
-      <button class="mini" type="button" data-sheet="responsible"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9h16M12 9v5M12 14l-4 6M12 14l4 6"/></svg><div><b>Access</b><span>Every digital activity has a no-device, no-internet version.</span></div></button>
+      <button class="mini" type="button" data-pop="use"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><div><b>Use</b><span>AI is on the table, openly. I teach what no model can do for a learner.</span></div></button>
+      <button class="mini" type="button" data-pop="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>Privacy</b><span>No learner names, marks or work ever go into an AI tool.</span></div></button>
+      <button class="mini" type="button" data-pop="verify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><div><b>Verify</b><span>Every quotation, line reference and fact is checked in the book first.</span></div></button>
+      <button class="mini" type="button" data-pop="access"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9h16M12 9v5M12 14l-4 6M12 14l4 6"/></svg><div><b>Access</b><span>Every digital activity has a no-device, no-internet version.</span></div></button>
     </div>
     <p class="small" style="margin-top:18px"><a href="technology.html">Everything on one printable page →</a></p>
   </div>
@@ -307,6 +312,7 @@
 <div class="scrim" id="scrim" hidden></div>
 <aside class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheet-title">
   <div class="sheet-head">
+    <span class="sheet-art" id="sheet-art" aria-hidden="true"></span>
     <p class="eyebrow" id="sheet-ch"></p>
     <h3 id="sheet-title" tabindex="-1"></h3>
     <button class="close" id="sheet-close" type="button" aria-label="Close">×</button>
@@ -314,14 +320,32 @@
   <div class="sheet-body" id="sheet-body"></div>
 </aside>
 
+<!-- ============ Hover cards: what each small card shows ============ -->
+<div class="pc-scrim" id="pc-scrim" hidden></div>
+<div class="popcard" id="popcard" hidden role="dialog" aria-modal="false"></div>
+<div id="popsrc" hidden>
+  <div id="p-kahoot"><p class="pc-kicker">Tool 1 of 5</p><h3>Kahoot</h3><div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>Live team quizzes for revision and informal assessment. Every learner answers every question, the leaderboard keeps energy high, and the results show me at once which text or skill needs re-teaching.</p></div><div class="panel warn"><h4>A limitation</h4><p>It needs internet and a device per team, and the time pressure rewards speed over careful reading, so I use it for revision, not for teaching new material.</p></div></div><p class="pc-foot"><button class="btn ghost" type="button" data-sheet="plugged">The Gauntlet activity →</button></p></div>
+  <div id="p-ppt"><p class="pc-kicker">Tool 2 of 5</p><h3>PowerPoint in presenter mode</h3><div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>Teacher-led visual lessons and in-class games. For the film-language pub quiz I read each scenario aloud from the presenter notes before the answer slide appeared, so the slides paced the lesson instead of replacing me.</p></div><div class="panel warn"><h4>A limitation</h4><p>It needs a projector and a laptop, and slides tempt a teacher to lecture; without deliberate pauses for discussion the lesson becomes passive.</p></div></div></div>
+  <div id="p-video"><p class="pc-kicker">Tool 3 of 5</p><h3>Subtitled video clips</h3><div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>Putting faces and voices to a Shakespeare text before and after reading it. A subtitled supercut of <em>The Tempest</em>, played through VLC on the projector, let learners see professional actors decode the Early Modern English they had struggled with.</p></div><div class="panel warn"><h4>A limitation</h4><p>Film clips are copyrighted, so they can be shown in class but not shared or published, and a clip only works if the class has already done the reading.</p></div></div></div>
+  <div id="p-docs"><p class="pc-kicker">Tool 4 of 5</p><h3>Google Docs</h3><div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>Writing and sharing lesson notes, resources and class-built lists, for example the “levelling up your English” resource list the Grade 11s built together, with one link for the whole cohort.</p></div><div class="panel warn"><h4>A limitation</h4><p>Learners need an account and a connection to edit, and shared documents need clear rules or a few learners do all the work.</p></div></div></div>
+  <div id="p-ai"><p class="pc-kicker">Tool 5 of 5</p><h3>Generative AI assistant</h3><div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>A planning aid for the teacher: drafting multiple-choice distractors, checking a lesson sequence for gaps, and producing a first draft of a resource that I then edit and verify against the text.</p></div><div class="panel warn"><h4>A limitation</h4><p>It invents plausible but wrong quotations, line references and facts, so nothing it produces goes to learners unchecked, and learner work or personal information is never pasted into it.</p></div></div></div>
+  <div id="p-use"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><p class="pc-kicker">Responsible AI · 1 of 4</p><h3>Responsible use</h3><p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. My answer is not to ban it but to teach what no model can do for a learner: reading closely, arguing honestly and thinking in dialogue. In my classrooms AI is on the table, openly. We talk about what it is good and bad at, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class. With the Grade 11s the closing debate was whether AI should be deleted forever, argued through four ethical frameworks.</p></div>
+  <div id="p-privacy"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><p class="pc-kicker">Responsible AI · 2 of 4</p><h3>Privacy</h3><p>I use AI tools as a planning aid for myself, never as a place for learner data. No learner names, marks, work or personal information go into any AI tool, and learners are not asked to create accounts on AI services for class work. Quiz platforms such as Kahoot are used with team names, not real names.</p></div>
+  <div id="p-verify"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg></div><p class="pc-kicker">Responsible AI · 3 of 4</p><h3>Verification</h3><p>Anything an AI tool helps to draft is checked against the prescribed text before it reaches learners: quotations and line references are confirmed in the book, facts are checked against the textbook or a reliable source, and distractors in multiple-choice questions are tested so that only one answer is defensible. Where AI was used in preparing a resource, the resource says so.</p></div>
+  <div id="p-access"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9h16M12 9v5M12 14l-4 6M12 14l4 6"/></svg></div><p class="pc-kicker">Responsible AI · 4 of 4</p><h3>Accessibility</h3><p>Every digital activity here has a version that needs no device, no connection and at most one printed page, so no learner is excluded by access. Video clips are shown with subtitles, slides use large text and high contrast, and quiz questions are read aloud as well as shown. Learners who need more time or a quieter setting can do the same quiz on paper at their own pace.</p></div>
+</div>
+
 <!-- ============ Library: what each pop-out shows ============ -->
 <div id="library" hidden>
 
-  <article id="s-voices" data-ch="begin" data-title="What the assessors said">
-    <blockquote>Excellent knowledge and innovative way of using media.<cite>University of Pretoria mentor lecturer · observed Grade 11 poetry lesson, 2026 · 98 out of 100</cite></blockquote>
-    <blockquote>Enhanced the learners’ vocabulary through scaffolding.<cite>Mentor teacher, Abbotts College Pretoria East · formal assessment, 2026 · 95 out of 100, with full marks for classroom competencies</cite></blockquote>
-    <blockquote>Dr Coombs was in total control of the material and guided and facilitated student learning actively by successfully engaging students in learning.<cite>Prof Emma Ruttkamp-Bloem · lecture observation, University of Pretoria</cite></blockquote>
-    <blockquote>He is friendly but also firm in terms of discipline.<cite>Prof Emma Ruttkamp-Bloem · peer evaluation report, 2026</cite></blockquote>
+  <article id="s-voices" data-ch="begin" data-title="What the assessors said" data-art="quote">
+    <div class="badges"><span class="badge"><b>95/100</b> mentor teacher, Abbotts College</span><span class="badge"><b>98/100</b> observed poetry lesson, UP mentor lecturer</span><span class="badge"><b>Full marks</b> classroom competencies</span></div>
+    <div class="quotes">
+      <blockquote>Excellent knowledge and innovative way of using media.<cite>University of Pretoria mentor lecturer · observed Grade 11 poetry lesson, 2026</cite></blockquote>
+      <blockquote>Enhanced the learners’ vocabulary through scaffolding.<cite>Mentor teacher, Abbotts College Pretoria East · formal assessment, 2026</cite></blockquote>
+      <blockquote>Dr Coombs was in total control of the material and guided and facilitated student learning actively by successfully engaging students in learning.<cite>Prof Emma Ruttkamp-Bloem · lecture observation, University of Pretoria</cite></blockquote>
+      <blockquote>He is friendly but also firm in terms of discipline.<cite>Prof Emma Ruttkamp-Bloem · peer evaluation report, 2026</cite></blockquote>
+    </div>
     <p class="actions"><button class="btn ghost" type="button" data-sheet="schools">Where I taught →</button></p>
   </article>
 
@@ -329,98 +353,138 @@
     <div class="panels"><div class="panel good"><h4>Teaching purpose</h4><p>Putting faces and voices to a Shakespeare text before and after reading it. A subtitled supercut of <em>The Tempest</em>, played through VLC on the projector, let learners see professional actors decode the Early Modern English they had struggled with.</p></div><div class="panel warn"><h4>A limitation</h4><p>Film clips are copyrighted, so they can be shown in class but not shared or published, and a clip only works if the class has already done the reading.</p></div></div>
   </article>
 
-  <article id="s-about" data-ch="profile" data-title="About me">
-    <p>I joined the Department of Philosophy at the University of Pretoria as a tutor in 2010 and stayed on as assistant lecturer and then head lecturer, teaching first-year classes of around five hundred students and designing four modules from scratch. From 2024 to 2026 I held a postdoctoral research fellowship at the University of Johannesburg.</p>
-    <p>In 2026 I turned to the school classroom. During my Postgraduate Certificate in Education I taught Grade 10 and 11 English at Abbotts College Pretoria East and Hoërskool Garsfontein, and found the same pleasure there that I had found in the lecture hall: watching a room of people start to think together.</p>
-    <h4>At a glance</h4>
-    <ul class="list">
-      <li>PhD in Philosophy (2023), MA and BA Honours cum laude, BA in English Literature and Philosophy, all from the University of Pretoria</li>
-      <li>Postgraduate Certificate in Education, FET Phase, in progress (2026)</li>
-      <li>120-hour TESOL/TEFL certificate; SACE provisional registration</li>
-      <li>English (home language) and Afrikaans (fluent)</li>
-      <li>Based in Pretoria East, Gauteng</li>
-    </ul>
-    <h4>Teaching strengths</h4>
-    <ul class="list">
-      <li>Dynamic, engaged classrooms and question-led class discussion</li>
-      <li>Close reading of literature and poetry; essay and argument writing</li>
-      <li>Lesson planning and module design; rubric design and marking</li>
-      <li>Online and hybrid teaching; AI-aware teaching and assessment</li>
-      <li>Training and mentoring tutors</li>
-    </ul>
+  <article id="s-about" data-ch="profile" data-title="About me" data-art="quill">
+    <div class="split">
+      <div>
+        <p class="quote-big">Watching a room of people start to think together.</p>
+        <p>I joined the Department of Philosophy at the University of Pretoria as a tutor in 2010 and stayed on as assistant lecturer and then head lecturer, teaching first-year classes of around five hundred students and designing four modules from scratch. From 2024 to 2026 I held a postdoctoral research fellowship at the University of Johannesburg.</p>
+        <p>In 2026 I turned to the school classroom. During my Postgraduate Certificate in Education I taught Grade 10 and 11 English at Abbotts College Pretoria East and Hoërskool Garsfontein, and found the same pleasure there that I had found in the lecture hall: watching a room of people start to think together.</p>
+        <h4>Teaching strengths</h4>
+        <div class="pills"><span class="pill">Question-led discussion</span><span class="pill">Close reading</span><span class="pill">Essay and argument writing</span><span class="pill">Lesson and module design</span><span class="pill">Rubric design and marking</span><span class="pill">Online and hybrid teaching</span><span class="pill">AI-aware assessment</span><span class="pill">Mentoring tutors</span></div>
+      </div>
+      <ol class="timeline">
+        <li><b>2010</b><span>Tutor, Department of Philosophy, University of Pretoria; BA in English Literature and Philosophy</span></li>
+        <li><b>2012 · 2016</b><span>BA Honours and MA in Philosophy, both cum laude</span></li>
+        <li><b>2019</b><span>Head lecturer: first-year classes of around five hundred; four modules designed from scratch</span></li>
+        <li><b>2023</b><span>PhD in Philosophy</span></li>
+        <li><b>2024–26</b><span>Postdoctoral research fellow, University of Johannesburg</span></li>
+        <li><b>May 2026</b><span>Hoërskool Garsfontein: Grade 10 English First Additional Language</span></li>
+        <li><b>Jul–Sep 2026</b><span>Abbotts College Pretoria East: Grade 10 and 11 English Home Language</span></li>
+        <li><b>2026</b><span>PGCE (FET Phase) in progress; TESOL/TEFL certificate; SACE provisional registration</span></li>
+      </ol>
+    </div>
     <p class="actions"><a class="btn" href="cv/Wehan-Coombs-FET-CV.pdf">Teaching CV · PDF</a> <button class="btn ghost" type="button" data-sheet="qualifications">Qualifications →</button></p>
   </article>
 
-  <article id="s-qualifications" data-ch="profile" data-title="Qualifications">
-    <ul class="list">
-      <li><strong>Postgraduate Certificate in Education (PGCE), FET Phase</strong><br>University of Pretoria · in progress, 2026</li>
-      <li><strong>PhD in Philosophy</strong><br>University of Pretoria · 2023</li>
-      <li><strong>MA in Philosophy, cum laude</strong><br>University of Pretoria · 2016</li>
-      <li><strong>BA Honours in Philosophy, cum laude</strong><br>University of Pretoria · 2012</li>
-      <li><strong>BA Humanities</strong>, majoring in Philosophy and English Literature<br>University of Pretoria · 2010</li>
-    </ul>
+  <article id="s-qualifications" data-ch="profile" data-title="Qualifications" data-art="scroll">
+    <ol class="timeline degrees">
+      <li><b>2026</b><span><strong>Postgraduate Certificate in Education (PGCE), FET Phase</strong><br>University of Pretoria · in progress</span></li>
+      <li><b>2023</b><span><strong>PhD in Philosophy</strong><br>University of Pretoria</span></li>
+      <li><b>2016</b><span><strong>MA in Philosophy</strong>, cum laude<br>University of Pretoria</span></li>
+      <li><b>2012</b><span><strong>BA Honours in Philosophy</strong>, cum laude<br>University of Pretoria</span></li>
+      <li><b>2010</b><span><strong>BA Humanities</strong>, majoring in Philosophy and English Literature<br>University of Pretoria</span></li>
+    </ol>
     <h4>Certificates and registration</h4>
-    <ul class="list">
-      <li>120-hour TESOL/TEFL certificate, World TESOL Academy, 2026</li>
-      <li>SACE provisional registration as a student teacher, 2026</li>
-      <li>Languages: English (home language), Afrikaans (fluent)</li>
-    </ul>
+    <div class="badges"><span class="badge"><b>TESOL/TEFL</b> 120 hours, World TESOL Academy, 2026</span><span class="badge"><b>SACE</b> provisional registration, 2026</span><span class="badge"><b>Languages</b> English (home), Afrikaans (fluent)</span></div>
     <p class="actions"><a class="btn" href="cv/Wehan-Coombs-FET-CV.pdf">Teaching CV · PDF</a></p>
   </article>
 
-  <article id="s-schools" data-ch="profile" data-title="Where I taught in 2026">
-    <h4>Abbotts College Pretoria East · July to September · seven weeks</h4>
-    <ul class="list">
-      <li>Planned and taught Grade 10 and 11 English Home Language, taking charge of classes with guidance from a mentor teacher: <em>Macbeth</em> and two Miyazaki films with the Grade 10s; <em>The Tempest</em>, three poems, the language of film and a philosophy enrichment unit with the Grade 11s</li>
-      <li>Used regular informal assessment to check what learners had understood, from quick questioning to a Kahoot revision gauntlet</li>
-      <li>Mentor assessment: 95 out of 100, with full marks for classroom competencies; 98 out of 100 from my University of Pretoria mentor lecturer for an observed Grade 11 poetry lesson</li>
-      <li>Community engagement through the school’s WESSA programme: tended the community garden, helped with a shoe donation outreach, and helped organise Book Day, a take-one-leave-one book donation drive</li>
-    </ul>
-    <h4>Hoërskool Garsfontein · May · three weeks</h4>
-    <ul class="list">
-      <li>Planned and taught Grade 10 English First Additional Language: grammar (conditionals and prepositions) and two poems, Bernard Levinson’s <em>Too Many Words</em> and Mongane Wally Serote’s <em>The Clothes</em></li>
-      <li>Built each poem across three lessons: a hook that connected it to the learners’ own lives, a stanza-by-stanza Socratic reading, then marked homework and a personal response</li>
-      <li>Eight hours of community engagement with the school’s <em>Kersfees in die Winter</em> charity drive</li>
-    </ul>
+  <article id="s-schools" data-ch="profile" data-title="Where I taught in 2026" data-art="school">
+    <div class="split">
+      <div class="school">
+        <div class="school-head"><b>Abbotts College Pretoria East</b><span>July to September · seven weeks</span><div class="badges"><span class="badge">Grade 10</span><span class="badge">Grade 11</span><span class="badge">English Home Language</span></div></div>
+        <ul class="list">
+          <li>Planned and taught Grade 10 and 11 English Home Language, taking charge of classes with guidance from a mentor teacher: <em>Macbeth</em> and two Miyazaki films with the Grade 10s; <em>The Tempest</em>, three poems, the language of film and a philosophy enrichment unit with the Grade 11s</li>
+          <li>Used regular informal assessment to check what learners had understood, from quick questioning to a Kahoot revision gauntlet</li>
+          <li>Community engagement through the school’s WESSA programme: tended the community garden, helped with a shoe donation outreach, and helped organise Book Day, a take-one-leave-one book donation drive</li>
+        </ul>
+        <blockquote>Enhanced the learners’ vocabulary through scaffolding.<cite>Mentor teacher · 95 out of 100, full marks for classroom competencies</cite></blockquote>
+      </div>
+      <div class="school">
+        <div class="school-head"><b>Hoërskool Garsfontein</b><span>May · three weeks</span><div class="badges"><span class="badge">Grade 10</span><span class="badge">English First Additional Language</span></div></div>
+        <ul class="list">
+          <li>Planned and taught grammar (conditionals and prepositions) and two poems, Bernard Levinson’s <em>Too Many Words</em> and Mongane Wally Serote’s <em>The Clothes</em></li>
+          <li>Built each poem across three lessons: a hook that connected it to the learners’ own lives, a stanza-by-stanza Socratic reading, then marked homework and a personal response</li>
+          <li>Eight hours of community engagement with the school’s <em>Kersfees in die Winter</em> charity drive</li>
+        </ul>
+        <blockquote>Excellent knowledge and innovative way of using media.<cite>UP mentor lecturer · observed Grade 11 poetry lesson at Abbotts · 98 out of 100</cite></blockquote>
+      </div>
+    </div>
     <p class="actions"><button class="btn ghost" type="button" data-sheet="voices">What the assessors said →</button></p>
   </article>
 
-  <article id="s-philosophy" data-ch="profile" data-title="Teaching philosophy">
-    <p>Learners do their best thinking when they feel known and respected. I start from what they already know, then set a challenge they reason through together in discussion, and end by applying the new skill to their own lives, so they leave with ideas they can call their own.</p>
-    <p>I plan most lessons as a three-part arc. First, I activate what learners already know, often through a vivid scenario or a playful dilemma resonant with their own lives. Then we move to an application phase, a scaffolded exercise that requires them to try something new and potentially fail. Finally, the newly developed skill is actualised by connecting it to some concrete project or real issue in the world that they can apply it to.</p>
-    <p>Reading difficult texts closely, building arguments and writing clear, well-structured essays are foundational skills in philosophy, and they make up a large part of what English Home Language asks of learners in Grades 10 to 12. In the classroom I rely on continual informal assessment: quick questioning, short written tasks and quizzes, which lets me adjust a lesson while it is still happening.</p>
-    <p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. In my classrooms, thinking happens out loud: discussion, Socratic questioning, arguments defended on their feet. Writing is taught as thinking, drafted, talked about and revised with feedback. AI is on the table, openly, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class.</p>
-    <p>I teach because I have seen what happens when students realise they can think for themselves, and that transformation carries into the rest of their lives. I bring fifteen years of teaching experience to any school or department, along with a collaborative spirit, high professional standards and genuine care. Above all, I keep learning from the people I teach.</p>
+  <article id="s-philosophy" data-ch="profile" data-title="Teaching philosophy" data-art="lamp">
+    <p class="quote-big">Learners do their best thinking when they feel known and respected.</p>
+    <p>I start from what they already know, then set a challenge they reason through together in discussion, and end by applying the new skill to their own lives, so they leave with ideas they can call their own.</p>
+    <div class="principles">
+      <div><span class="num">1</span><b>Known</b><p>I activate what learners already know, often through a vivid scenario or a playful dilemma resonant with their own lives.</p></div>
+      <div><span class="num">2</span><b>Challenge</b><p>An application phase: a scaffolded exercise that requires them to try something new and potentially fail.</p></div>
+      <div><span class="num">3</span><b>Own</b><p>The new skill is actualised by connecting it to a concrete project or real issue in the world that they can apply it to.</p></div>
+    </div>
+    <div class="split">
+      <div>
+        <h4>What English asks</h4>
+        <p>Reading difficult texts closely, building arguments and writing clear, well-structured essays are foundational skills in philosophy, and they make up a large part of what English Home Language asks of learners in Grades 10 to 12. In the classroom I rely on continual informal assessment: quick questioning, short written tasks and quizzes, which lets me adjust a lesson while it is still happening.</p>
+      </div>
+      <div>
+        <h4>In the age of AI</h4>
+        <p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. In my classrooms, thinking happens out loud: discussion, Socratic questioning, arguments defended on their feet. Writing is taught as thinking, drafted, talked about and revised with feedback. AI is on the table, openly, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class.</p>
+      </div>
+    </div>
+    <blockquote>I teach because I have seen what happens when students realise they can think for themselves, and that transformation carries into the rest of their lives. I bring fifteen years of teaching experience to any school or department, along with a collaborative spirit, high professional standards and genuine care. Above all, I keep learning from the people I teach.<cite>Docendo discimus · by teaching, we learn</cite></blockquote>
   </article>
 
-  <article id="s-poet" data-ch="lessons" data-title="Lesson 1 · “The Poet”">
-    <p class="when">Grade 11 English Home Language · Literature: poetry · Abbotts College, 28 August 2026 · 45 minutes</p>
-    <p>Theseus’s speech on the lunatic, the lover and the poet, from <em>A Midsummer Night’s Dream</em>. “Poiesis” goes on the board before the learners walk in. A time-crunch device hunt in groups with a clue key on the board; then poiesis, a skateboarding giraffe, a square triangle, and a dilemma: would you give up your imagination to always know the truth?</p>
-    <h4>What is in the plan</h4>
-    <ul class="list">
-      <li>CAPS context, outcomes, key concepts, the 45-minute sequence, learner participation, differentiation, assessment and my reflection after teaching it</li>
-      <li>LTSM 1: my two-page lesson notes with the clue key, the thought experiments and the discussion questions</li>
-      <li>The lesson my UP mentor lecturer observed: 98 out of 100</li>
-    </ul>
-    <p class="actions"><a class="btn" href="lesson-1.html">Open the lesson plan</a> <a class="btn ghost" href="downloads/Wehan-Coombs-Lesson-1-The-Poet.pdf">PDF</a> <a class="btn ghost" href="materials/Wehan-Coombs-LTSM-1-The-Poet-Lesson-Notes.pdf">LTSM 1 · PDF</a></p>
+  <article id="s-poet" data-ch="lessons" data-title="Lesson 1 · “The Poet”" data-art="book" data-tone="poet">
+    <div class="badges"><span class="badge">Grade 11</span><span class="badge">English Home Language</span><span class="badge">Literature · poetry</span><span class="badge">28 August 2026</span><span class="badge">45 minutes</span><span class="badge gold"><b>98/100</b> observed lesson</span></div>
+    <p class="quote-big">Would you give up your imagination to always know the truth?</p>
+    <p>Theseus’s speech on the lunatic, the lover and the poet, from <em>A Midsummer Night’s Dream</em>. “Poiesis” goes on the board before the learners walk in. A time-crunch device hunt in groups with a clue key on the board; then poiesis, a skateboarding giraffe, a square triangle, and the dilemma.</p>
+    <h4>The lesson at a glance</h4>
+    <div class="lesson-bar"><span style="flex:5"><b>5</b>Hook</span><span style="flex:10"><b>10</b>Device hunt</span><span style="flex:15"><b>15</b>Poiesis</span><span style="flex:15"><b>15</b>The dilemma</span></div>
+    <ol class="steps">
+      <li><b>Hook.</b> A break from assessments: one learner reads, I read for rhythm, gut reactions, then the plot of the play in two minutes.</li>
+      <li><b>Device hunt.</b> Groups race the clock to find two devices every few lines, following the clue key. Enjambment is a freebie; scores are held back.</li>
+      <li><b>Poiesis.</b> Speech is everyday magic: a skateboarding giraffe appears in every head. Line by line, the groups supply the held-back answers.</li>
+      <li><b>The dilemma.</b> Xenia, residue, a square triangle, and a vote: truth or imagination? Cut right before the bell.</li>
+    </ol>
+    <div class="dl-cards">
+      <a class="dl" href="lesson-1.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5M9 13h6M9 17h6"/></svg><b>Full lesson plan</b><span>outcomes, sequence, participation, differentiation, assessment, reflection</span></a>
+      <a class="dl" href="downloads/Wehan-Coombs-Lesson-1-The-Poet.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg><b>Lesson plan · PDF</b><span>printable</span></a>
+      <a class="dl" href="materials/Wehan-Coombs-LTSM-1-The-Poet-Lesson-Notes.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg><b>LTSM 1 · lesson notes</b><span>clue key, thought experiments, discussion questions</span></a>
+    </div>
+    <blockquote>They struggled with the abstract elements, but they resonated strongly with the connections between the three poems.<cite>My reflection after teaching it</cite></blockquote>
   </article>
 
-  <article id="s-macbeth" data-ch="lessons" data-title="Lesson 2 · Macbeth essay preparation">
-    <p class="when">Grade 10 English Home Language · Writing: the literary essay · Abbotts College, 5 August 2026 · 45 minutes</p>
-    <p>The night after the murder: horses that broke their stalls and ate each other. From there to Jacobean witch panic and the divine right of kings, then the question every essay has to answer: whose fault is it? The class divides the blame between the witches, Lady Macbeth and Macbeth himself and defends the split from the text, and we close with the PEEL method for an evidence-based paragraph.</p>
-    <h4>What is in the plan</h4>
-    <ul class="list">
-      <li>CAPS context, outcomes, key concepts, the 45-minute sequence, learner participation, differentiation, assessment and my reflection after teaching it</li>
-      <li>LTSM 2: my one-page revision sheet with the 45-minute plan, the PEEL guide and a quotation bank keyed to the two essay questions</li>
-    </ul>
-    <p class="actions"><a class="btn" href="lesson-2.html">Open the lesson plan</a> <a class="btn ghost" href="downloads/Wehan-Coombs-Lesson-2-Macbeth-Essay.pdf">PDF</a> <a class="btn ghost" href="materials/macbeth-revision-sheet.pdf">LTSM 2 · PDF</a></p>
+  <article id="s-macbeth" data-ch="lessons" data-title="Lesson 2 · Macbeth essay preparation" data-art="book" data-tone="mac">
+    <div class="badges"><span class="badge">Grade 10</span><span class="badge">English Home Language</span><span class="badge">Writing · the literary essay</span><span class="badge">5 August 2026</span><span class="badge">45 minutes</span></div>
+    <p class="quote-big">Whose fault is it?</p>
+    <p>The night after the murder: horses that broke their stalls and ate each other. From there to Jacobean witch panic and the divine right of kings, then the question every essay has to answer. The class divides the blame between the witches, Lady Macbeth and Macbeth himself and defends the split from the text, and we close with the PEEL method for an evidence-based paragraph.</p>
+    <h4>The lesson at a glance</h4>
+    <div class="lesson-bar"><span style="flex:10"><b>10</b>Hook</span><span style="flex:10"><b>10</b>Ambition</span><span style="flex:20"><b>20</b>The blame debate</span><span style="flex:5"><b>5</b>PEEL</span></div>
+    <ol class="steps">
+      <li><b>Hook.</b> Act 2 Scene 4 read aloud and unpacked: darkness at noon, horses eating each other, witchcraft panic, nature in revolt against a king-killer.</li>
+      <li><b>Ambition.</b> What is your biggest ambition, and what would you do to get it? Would you betray a friend if you could get away with it, and a partner pushed you?</li>
+      <li><b>The blame debate.</b> Three places for the blame: the witches, Lady Macbeth, Macbeth. The class votes and argues from the text, then we turn to deception and guilt.</li>
+      <li><b>PEEL.</b> Point, Evidence, Explain, Link: the paragraph structure for the essay, with the school’s rules.</li>
+    </ol>
+    <div class="dl-cards">
+      <a class="dl" href="lesson-2.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5M9 13h6M9 17h6"/></svg><b>Full lesson plan</b><span>outcomes, sequence, participation, differentiation, assessment, reflection</span></a>
+      <a class="dl" href="downloads/Wehan-Coombs-Lesson-2-Macbeth-Essay.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg><b>Lesson plan · PDF</b><span>printable</span></a>
+      <a class="dl" href="materials/macbeth-revision-sheet.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg><b>LTSM 2 · revision sheet</b><span>45-minute plan, PEEL guide, quotation bank</span></a>
+    </div>
+    <blockquote>Focusing on the image of the horses eating each other worked very well; it absolutely caught their attention.<cite>My reflection after teaching it</cite></blockquote>
   </article>
 
-  <article id="s-tempest" data-ch="lessons" data-title="Extra · The Tempest, Act 3 Scene 3">
-    <p class="when">Grade 11 English Home Language · Literature: drama · Abbotts College, 4 September 2026 · 45 minutes</p>
-    <p>The illusory banquet and Ariel’s Harpy speech, read as a staged scene: desks pushed into a banquet table, fizzy sweets for the magical feast, the rest of the class as the island’s spirits, and thunder from a speaker as Ariel condemns the three men of sin. Corny, and it worked.</p>
+  <article id="s-tempest" data-ch="lessons" data-title="Extra · The Tempest, Act 3 Scene 3" data-art="book" data-tone="temp">
+    <div class="badges"><span class="badge">Grade 11</span><span class="badge">English Home Language</span><span class="badge">Literature · drama</span><span class="badge">4 September 2026</span><span class="badge">45 minutes</span></div>
+    <p class="quote-big">Three men of sin.</p>
+    <p>The illusory banquet and Ariel’s Harpy speech, read as a staged scene: desks pushed into a banquet table, fizzy sweets for the magical feast, the rest of the class as the island’s spirits, and thunder from a speaker as Ariel condemns the nobles. Corny, and it worked.</p>
+    <h4>The lesson at a glance</h4>
+    <div class="lesson-bar"><span style="flex:5"><b>5</b>Hook</span><span style="flex:5"><b>5</b>Roles</span><span style="flex:25"><b>25</b>The banquet</span><span style="flex:5"><b>5</b>Wrap</span><span style="flex:5"><b>5</b>Q&amp;A</span></div>
     <p>An additional lesson beyond the two the brief asks for, kept here because it shows a different way of reading drama.</p>
-    <p class="actions"><a class="btn" href="lesson-tempest.html">Open the lesson plan</a> <a class="btn ghost" href="downloads/Wehan-Coombs-Lesson-Extra-The-Tempest.pdf">PDF</a></p>
+    <div class="dl-cards">
+      <a class="dl" href="lesson-tempest.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5M9 13h6M9 17h6"/></svg><b>Full lesson plan</b><span>the whole staged reading</span></a>
+      <a class="dl" href="downloads/Wehan-Coombs-Lesson-Extra-The-Tempest.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg><b>Lesson plan · PDF</b><span>printable</span></a>
+    </div>
   </article>
 
   <article id="s-ltsm" data-ch="lessons" data-title="About the resources">
