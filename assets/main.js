@@ -83,6 +83,17 @@
     n.addEventListener('click', go); n.addEventListener('mouseenter', go); n.addEventListener('focus', go);
   });
 
+
+  /* ---------- One activity, two classrooms: the switch ---------- */
+  const cls = $('#classroom'), clsBtn = $('#cls-switch'), clsState = $('#cls-state');
+  if (cls && clsBtn) {
+    clsBtn.addEventListener('click', () => {
+      const off = cls.classList.toggle('off');
+      clsBtn.setAttribute('aria-pressed', off ? 'false' : 'true');
+      if (clsState) clsState.textContent = off ? 'off · the same Gauntlet on a chalkboard' : 'on · the Tempest Gauntlet on Kahoot';
+    });
+  }
+
   /* ---------- Highlight the menu item for the chapter on screen ---------- */
   const secs = $$('.chapter[id]'), links = $$('.nav a[href^="#"]');
   if (secs.length && links.length && 'IntersectionObserver' in window) {

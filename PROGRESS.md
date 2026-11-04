@@ -53,3 +53,12 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 - Rebuilt the home page as one visual page in the style of the personal site: dark theme with a light toggle, headshot in a gold ring, stat cards that open the assessors' quotes, two video frames, profile cards and the "arc of a lesson" drawing, a bookshelf of lesson plans, six round tokens for the quiz, tool chips and activity tiles. Everything opens in a slide-in pop-out; the detail pages stay as printable full versions.
 - `CHAT-PROMPT.txt`: a copy-paste prompt with every drafted passage, for revising the text in a chat.
 
+---
+
+## 2026-11-04: playable quiz and visual Technology section
+
+**Done**
+- Assessment: the Kahoot quiz is now playable on the page (`assets/quiz.js`): pick a round or all six, 30-second timer, four coloured answer tiles, points for speed, double points on bonus and Gauntlet questions, a result podium. Three podium photos from the three classes (learner nicknames blurred) sit beside it as evidence.
+- Technology: five tool cards; a switch that flips one illustration between the Kahoot version (projector and phones) and the chalkboard version (A B C D, tally scoreboard, paper letters) with three steps for each; four small cards for the responsible-AI note.
+- Pop-outs are wider; tool pop-outs show purpose and limitation side by side; instructions use numbered steps.
+
