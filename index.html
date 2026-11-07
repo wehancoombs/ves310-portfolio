@@ -19,11 +19,11 @@
   <a class="brand" href="#begin">Dr Wehan M. Coombs <span>· Teaching portfolio</span></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav id="nav" class="nav" aria-label="Chapters">
-    <a href="#begin">Begin</a>
     <a href="#profile">Profile &amp; CV</a>
     <a href="#lessons">Lessons</a>
     <a href="#assessment">Assessment</a>
     <a href="#technology">Technology</a>
+    <a href="#ai">Responsible AI</a>
     <a href="#references">References</a>
   </nav>
   <button class="theme" id="theme" type="button" aria-label="Switch between dark and light">☀ Light</button>
@@ -85,7 +85,25 @@
 <section class="chapter" id="profile">
   <div class="wrap">
     <div class="ch-head"><span class="ch-n">B1</span><h2>Profile &amp; CV</h2><span class="ch-sub">Tap a card to open it.</span></div>
-    <div class="two wide-left">
+    <div class="two profile-grid">
+      <div class="arc-col"><figure class="arc">
+        <figcaption class="eyebrow">The arc of a lesson</figcaption>
+        <svg viewBox="0 0 520 300" aria-label="A lesson rises from what learners know, through a challenge, to ideas they own">
+          <path id="arcpath" d="M40 250 C 150 250 170 150 260 150 S 380 50 480 50"/>
+          <g class="node on" tabindex="0" role="button" data-text="Start from what they already know, often through a vivid scenario or a playful dilemma from their own lives.">
+            <circle class="hit" cx="40" cy="250" r="26"/><circle class="halo" cx="40" cy="250" r="14"/><circle class="pt" cx="40" cy="250" r="7"/><text x="40" y="288">Known</text>
+          </g>
+          <g class="node" tabindex="0" role="button" data-text="Set a challenge they reason through together, in discussion: a scaffolded exercise that asks them to try something new and maybe fail.">
+            <circle class="hit" cx="260" cy="150" r="26"/><circle class="halo" cx="260" cy="150" r="14"/><circle class="pt" cx="260" cy="150" r="7"/><text x="260" y="116">Challenge</text>
+          </g>
+          <g class="node" tabindex="0" role="button" data-text="End by applying it to their own lives, so they leave with ideas they can call their own.">
+            <circle class="hit" cx="480" cy="50" r="26"/><circle class="halo" cx="480" cy="50" r="14"/><circle class="pt" cx="480" cy="50" r="7"/><text x="480" y="90">Own</text>
+          </g>
+        </svg>
+        <p class="arc-text" id="arc-text" aria-live="polite">Start from what they already know, often through a vivid scenario or a playful dilemma from their own lives.</p>
+        <p class="hint">Hover or tap the three points.</p>
+        <p class="actions"><a class="btn" href="cv/Wehan-Coombs-FET-CV.pdf">Teaching CV · PDF</a> <a class="btn ghost" href="#watch">Watch a lesson</a></p>
+      </figure></div>
       <div class="tiles">
         <button class="tile" type="button" data-sheet="about">
           <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40c6-2 10-6 14-12 4-6 8-10 18-16-4 10-8 14-14 18-6 4-10 6-18 10z"/><path d="M8 40l10-10"/></svg>
@@ -103,28 +121,8 @@
           <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M18 34c-6-3-9-8-9-14a15 15 0 0 1 30 0c0 6-3 11-9 14"/><path d="M18 34v4h12v-4M20 42h8"/><path d="M24 20v8M20 24h8"/></svg>
           <b>Teaching philosophy</b><span>A short, school-facing statement of how I teach English and why.</span>
         </button>
-        <a class="tile link wide" href="cv/Wehan-Coombs-FET-CV.pdf">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M12 6h18l8 8v28H12z"/><path d="M30 6v8h8"/><path d="M24 20v14M18 28l6 6 6-6"/></svg>
-          <b>Teaching CV · download</b><span>Two pages, PDF. Links back to this portfolio. Referees and contact details inside.</span>
-        </a>
       </div>
-      <figure class="arc">
-        <figcaption class="eyebrow">The arc of a lesson</figcaption>
-        <svg viewBox="0 0 520 300" aria-label="A lesson rises from what learners know, through a challenge, to ideas they own">
-          <path id="arcpath" d="M40 250 C 150 250 170 150 260 150 S 380 50 480 50"/>
-          <g class="node on" tabindex="0" role="button" data-text="Start from what they already know, often through a vivid scenario or a playful dilemma from their own lives.">
-            <circle class="hit" cx="40" cy="250" r="26"/><circle class="halo" cx="40" cy="250" r="14"/><circle class="pt" cx="40" cy="250" r="7"/><text x="40" y="288">Known</text>
-          </g>
-          <g class="node" tabindex="0" role="button" data-text="Set a challenge they reason through together, in discussion: a scaffolded exercise that asks them to try something new and maybe fail.">
-            <circle class="hit" cx="260" cy="150" r="26"/><circle class="halo" cx="260" cy="150" r="14"/><circle class="pt" cx="260" cy="150" r="7"/><text x="260" y="116">Challenge</text>
-          </g>
-          <g class="node" tabindex="0" role="button" data-text="End by applying it to their own lives, so they leave with ideas they can call their own.">
-            <circle class="hit" cx="480" cy="50" r="26"/><circle class="halo" cx="480" cy="50" r="14"/><circle class="pt" cx="480" cy="50" r="7"/><text x="480" y="90">Own</text>
-          </g>
-        </svg>
-        <p class="arc-text" id="arc-text" aria-live="polite">Start from what they already know, often through a vivid scenario or a playful dilemma from their own lives.</p>
-        <p class="hint">Hover or tap the three points.</p>
-      </figure>
+      
     </div>
   </div>
 </section>
@@ -160,9 +158,9 @@
 <!-- ============ 5 · Assessment ============ -->
 <section class="chapter" id="assessment">
   <div class="wrap">
-    <div class="ch-head"><span class="ch-n">B3</span><h2>Assessment</h2><span class="ch-sub">A Grade 11 revision quiz I wrote and ran on Kahoot: six rounds, 26 questions, 36 marks. Play it.</span></div>
+    <div class="ch-head"><span class="ch-n">B3</span><h2>Assessment</h2><span class="ch-sub">A Grade 11 revision quiz I wrote and ran on Kahoot: six rounds, 26 questions, 36 marks. Try it!</span></div>
     <div class="two wide-left">
-      <div class="kq" id="kq"><div class="kq-board"><p class="kq-eyebrow">Play it</p><h3>The quiz, as the learners saw it</h3><p>Loading…</p></div></div>
+      <div class="kq" id="kq"><div class="kq-board"><p class="kq-eyebrow">Try it!</p><h3>The quiz, as the learners saw it</h3><p>Loading…</p></div></div>
       <div>
         <p class="eyebrow">In the classroom</p>
         <p class="small">The podium at the end of the Tempest Gauntlet in three Grade 11 classes, September 2026, photographed off the projector. Learner nicknames blurred. Swipe or use the arrows.</p>
@@ -180,10 +178,8 @@
     </div>
     <div class="chips block">
       <button class="chip" type="button" data-sheet="instructions"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>Learner instructions</button>
-      <button class="chip" type="button" data-sheet="r1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>Read all questions and answers</button>
       <button class="chip" type="button" data-sheet="memo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg>Marking memorandum</button>
       <button class="chip" type="button" data-sheet="feedback"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Feedback and differentiation</button>
-      <a class="chip" href="assessment.html" style="border-bottom:1px solid var(--line-2)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l5 5v13H6z"/><path d="M15 3v5h5"/></svg>Full task as one page</a>
       <a class="chip" href="materials/Wehan-Coombs-Grade-11-Revision-Quiz-Questions-and-Answers.pdf" style="border-bottom:1px solid var(--line-2)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12M7 11l5 5 5-5M5 20h14"/></svg>Quiz with memo · PDF</a>
     </div>
   </div>
@@ -267,15 +263,20 @@
       </div>
       <p class="actions"><button class="btn ghost" type="button" data-sheet="plugged">Full instructions · plugged in</button> <button class="btn ghost" type="button" data-sheet="unplugged">Full instructions · unplugged</button> <a class="btn ghost" href="materials/Wehan-Coombs-Grade-11-Revision-Quiz-Kahoot-Import.xlsx">Kahoot import · Excel</a></p>
     </div>
-
-    <p class="eyebrow" style="margin-top:20px">Responsible AI · hover or tap a card</p>
-    <div class="minis" style="margin-top:0">
-      <button class="mini" type="button" data-pop="use"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><div><b>Use</b><span>AI is on the table, openly. I teach what no model can do for a learner.</span></div></button>
-      <button class="mini" type="button" data-pop="privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>Privacy</b><span>No learner names, marks or work ever go into an AI tool.</span></div></button>
-      <button class="mini" type="button" data-pop="verify"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg><div><b>Verify</b><span>Every quotation, line reference and fact is checked in the book first.</span></div></button>
-      <button class="mini" type="button" data-pop="access"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9h16M12 9v5M12 14l-4 6M12 14l4 6"/></svg><div><b>Access</b><span>Every digital activity has a no-device, no-internet version.</span></div></button>
-    </div>
     <p class="small" style="margin-top:18px"><a href="technology.html">Everything on one printable page →</a></p>
+  </div>
+</section>
+
+<!-- ============ 6b · Responsible AI ============ -->
+<section class="chapter" id="ai">
+  <div class="wrap">
+    <div class="ch-head"><h2>Responsible AI</h2><span class="ch-sub">How I use it, what never goes into it, how its output is checked, and how every activity stays open to every learner.</span></div>
+    <div class="ai-grid">
+      <div class="ai-card"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg></div><h3>Use</h3><p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. My answer is not to ban it but to teach what no model can do for a learner: reading closely, arguing honestly and thinking in dialogue. AI is on the table, openly; we talk about what it is good and bad at, and assessment rewards thinking that happens in front of me, in class. With the Grade 11s the closing debate was whether AI should be deleted forever, argued through four ethical frameworks.</p></div>
+      <div class="ai-card"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div><h3>Privacy</h3><p>I use AI tools as a planning aid for myself, never as a place for learner data. No learner names, marks, work or personal information go into any AI tool, and learners are not asked to create accounts on AI services for class work. Quiz platforms such as Kahoot are used with team names, not real names.</p></div>
+      <div class="ai-card"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4 4L19 6"/></svg></div><h3>Verification</h3><p>Anything an AI tool helps to draft is checked against the prescribed text before it reaches learners: quotations and line references are confirmed in the book, facts against the textbook or a reliable source, and multiple-choice distractors are tested so that only one answer is defensible. Where AI was used in preparing a resource, the resource says so.</p></div>
+      <div class="ai-card"><div class="pc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M4 9h16M12 9v5M12 14l-4 6M12 14l4 6"/></svg></div><h3>Accessibility</h3><p>Every digital activity here has a version that needs no device, no connection and at most one printed page, so no learner is excluded by access. Clips are shown with subtitles, slides use large text and high contrast, and quiz questions are read aloud as well as shown. Learners who need more time or a quieter setting can do the same quiz on paper at their own pace.</p></div>
+    </div>
   </div>
 </section>
 
@@ -412,30 +413,23 @@
 
   <article id="s-philosophy" data-ch="profile" data-title="Teaching philosophy" data-art="lamp">
     <p class="quote-big">Learners do their best thinking when they feel known and respected.</p>
-    <p>I start from what they already know, then set a challenge they reason through together in discussion, and end by applying the new skill to their own lives, so they leave with ideas they can call their own.</p>
     <div class="principles">
-      <div><span class="num">1</span><b>Known</b><p>I activate what learners already know, often through a vivid scenario or a playful dilemma resonant with their own lives.</p></div>
-      <div><span class="num">2</span><b>Challenge</b><p>An application phase: a scaffolded exercise that requires them to try something new and potentially fail.</p></div>
-      <div><span class="num">3</span><b>Own</b><p>The new skill is actualised by connecting it to a concrete project or real issue in the world that they can apply it to.</p></div>
+      <div><span class="num">1</span><b>Known</b><p>Start from what learners already know, often through a vivid scenario or a playful dilemma from their own lives.</p></div>
+      <div><span class="num">2</span><b>Challenge</b><p>A scaffolded exercise they reason through together, in discussion, that asks them to try something new and maybe fail.</p></div>
+      <div><span class="num">3</span><b>Own</b><p>Apply the new skill to a real issue or project in their own world, so they leave with ideas they can call their own.</p></div>
     </div>
     <div class="split">
-      <div>
-        <h4>What English asks</h4>
-        <p>Reading difficult texts closely, building arguments and writing clear, well-structured essays are foundational skills in philosophy, and they make up a large part of what English Home Language asks of learners in Grades 10 to 12. In the classroom I rely on continual informal assessment: quick questioning, short written tasks and quizzes, which lets me adjust a lesson while it is still happening.</p>
-      </div>
-      <div>
-        <h4>In the age of AI</h4>
-        <p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. In my classrooms, thinking happens out loud: discussion, Socratic questioning, arguments defended on their feet. Writing is taught as thinking, drafted, talked about and revised with feedback. AI is on the table, openly, so that learners use it thoughtfully, and assessment rewards thinking that happens in front of me, in class.</p>
-      </div>
+      <div><h4>What English asks</h4><p>Reading difficult texts closely, building arguments and writing clear, well-structured essays make up a large part of what English Home Language asks of learners in Grades 10 to 12. I rely on continual informal assessment, quick questioning, short written tasks and quizzes, so I can adjust a lesson while it is still happening.</p></div>
+      <div><h4>In the age of AI</h4><p>Generative AI can now write the kind of essay most classrooms use to teach and to assess. In my classrooms thinking happens out loud and writing is taught as thinking: drafted, talked about and revised. AI is on the table, openly, and assessment rewards thinking that happens in front of me, in class.</p></div>
     </div>
-    <blockquote>I teach because I have seen what happens when students realise they can think for themselves, and that transformation carries into the rest of their lives. I bring fifteen years of teaching experience to any school or department, along with a collaborative spirit, high professional standards and genuine care. Above all, I keep learning from the people I teach.<cite>Docendo discimus · by teaching, we learn</cite></blockquote>
+    <blockquote>I teach because I have seen what happens when students realise they can think for themselves, and that transformation carries into the rest of their lives.<cite>Docendo discimus · by teaching, we learn</cite></blockquote>
   </article>
 
   <article id="s-poet" data-ch="lessons" data-title="Lesson 1 · “The Poet”" data-art="book" data-tone="poet">
     <div class="badges"><span class="badge">Grade 11</span><span class="badge">English Home Language</span><span class="badge">Literature · poetry</span><span class="badge">28 August 2026</span><span class="badge">45 minutes</span><span class="badge gold"><b>98/100</b> observed lesson</span></div>
     <p class="quote-big">Would you give up your imagination to always know the truth?</p>
     <p>Theseus’s speech on the lunatic, the lover and the poet, from <em>A Midsummer Night’s Dream</em>. “Poiesis” goes on the board before the learners walk in. A time-crunch device hunt in groups with a clue key on the board; then poiesis, a skateboarding giraffe, a square triangle, and the dilemma.</p>
-    <h4>The lesson at a glance</h4>
+    <h4>The lesson at a glance <span class="h4-hint">· tap a stage</span></h4>
     <div class="lesson-bar"><span style="flex:5"><b>5</b>Hook</span><span style="flex:10"><b>10</b>Device hunt</span><span style="flex:15"><b>15</b>Poiesis</span><span style="flex:15"><b>15</b>The dilemma</span></div>
     <ol class="steps">
       <li><b>Hook.</b> A break from assessments: one learner reads, I read for rhythm, gut reactions, then the plot of the play in two minutes.</li>
@@ -455,7 +449,7 @@
     <div class="badges"><span class="badge">Grade 10</span><span class="badge">English Home Language</span><span class="badge">Writing · the literary essay</span><span class="badge">5 August 2026</span><span class="badge">45 minutes</span></div>
     <p class="quote-big">Whose fault is it?</p>
     <p>The night after the murder: horses that broke their stalls and ate each other. From there to Jacobean witch panic and the divine right of kings, then the question every essay has to answer. The class divides the blame between the witches, Lady Macbeth and Macbeth himself and defends the split from the text, and we close with the PEEL method for an evidence-based paragraph.</p>
-    <h4>The lesson at a glance</h4>
+    <h4>The lesson at a glance <span class="h4-hint">· tap a stage</span></h4>
     <div class="lesson-bar"><span style="flex:10"><b>10</b>Hook</span><span style="flex:10"><b>10</b>Ambition</span><span style="flex:20"><b>20</b>The blame debate</span><span style="flex:5"><b>5</b>PEEL</span></div>
     <ol class="steps">
       <li><b>Hook.</b> Act 2 Scene 4 read aloud and unpacked: darkness at noon, horses eating each other, witchcraft panic, nature in revolt against a king-killer.</li>

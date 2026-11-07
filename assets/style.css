@@ -451,6 +451,26 @@ main.lesson dl.meta { background: var(--surface); border: 1px solid var(--line);
 main.lesson table th { color: var(--accent); }
 @media (max-width: 640px) { .lesson-hero { grid-template-columns: 1fr; justify-items: center; } }
 
+/* ---------- Gentle section snapping, profile layout, stages, Responsible AI ---------- */
+html { scroll-snap-type: y proximity; }
+.chapter { scroll-snap-align: start; scroll-snap-stop: normal; }
+.profile-grid { grid-template-columns: 1fr 1.25fr; }
+.arc-col .actions { margin-top: 14px; }
+#ai, [data-ch="ai"] { --accent: var(--make); }
+.ai-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ai-card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 22px 24px; }
+.ai-card h3 { font: 500 24px var(--serif); color: var(--accent); margin: 10px 0 8px; }
+.ai-card p { margin: 0; font-size: 15.5px; color: var(--text-2); line-height: 1.55; }
+@media (max-width: 760px) { .ai-grid { grid-template-columns: 1fr; } .profile-grid { grid-template-columns: 1fr; } }
+.h4-hint { font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--text-3); }
+.lesson-bar.staged span { cursor: pointer; transition: transform .25s var(--ease), box-shadow .25s; }
+.lesson-bar.staged span:hover { transform: translateY(-2px); }
+.lesson-bar.staged span.on { box-shadow: 0 0 0 2px var(--accent); transform: translateY(-3px); }
+.steps.staged li { display: none; }
+.steps.staged li.on { display: block; animation: fadein .3s; }
+@keyframes fadein { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.pc-scrim.peek { pointer-events: none; opacity: 0 !important; }
+
 @media print {
   :root { --bg: #fff; --bg-2: #f3f3f3; --surface: #fff; --line: #ccc; --line-2: #999; --text: #000; --text-2: #333; --text-3: #555; --gold: #7a5a10; --teach: #8a2f1e; --think: #1f3a5f; --make: #1f5a48; }
   .top, footer, .btn, .no-print, .sheet, .scrim, .theme, .menu-btn { display: none !important; }

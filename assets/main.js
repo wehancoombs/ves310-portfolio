@@ -43,6 +43,18 @@
     });
   }
 
+  /* ---------- Lesson stages: tap a segment, read that stage ---------- */
+  function initStages(root) {
+    $$('.lesson-bar', root).forEach(bar => {
+      const steps = bar.parentElement.querySelector('ol.steps'); if (!steps) return;
+      const segs = $$('span', bar), items = $$('li', steps);
+      bar.classList.add('staged'); steps.classList.add('staged');
+      const pick = i => { segs.forEach((s2, k) => s2.classList.toggle('on', k === i)); items.forEach((li, k) => li.classList.toggle('on', k === i)); };
+      segs.forEach((s2, i) => { s2.setAttribute('role', 'button'); s2.setAttribute('tabindex', '0'); s2.addEventListener('click', () => pick(i)); s2.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(i); } }); });
+      pick(0);
+    });
+  }
+
   /* ---------- Pop-out sheets: content lives in #library, one sheet shows it ---------- */
   const sheet = $('#sheet'), scrim = $('#scrim'), lib = $('#library');
   if (sheet && scrim && lib) {
@@ -61,6 +73,7 @@
       sheetTitle.textContent = art.dataset.title || '';
       sheetBody.innerHTML = art.innerHTML;
       sheetBody.scrollTop = 0;
+      initStages(sheetBody);
       sheet.hidden = false; scrim.hidden = false; body.classList.add('locked');
       requestAnimationFrame(() => { sheet.classList.add('on'); scrim.classList.add('on'); sheetTitle.focus({ preventScroll: true }); });
       try { history.replaceState(null, '', '#s-' + id); } catch (e) {}
@@ -130,7 +143,7 @@
       clearTimeout(pcTimer);
       if (currentPop !== id) pc.innerHTML = '<button class="close" type="button" aria-label="Close">×</button>' + s.innerHTML + (pin ? '' : '<p class="pc-hint">Click the card to keep it open.</p>');
       currentPop = id;
-      pc.hidden = false; pcScrim.hidden = false;
+      pc.hidden = false; pcScrim.hidden = false; pcScrim.classList.toggle('peek', !pin);
       requestAnimationFrame(() => { pc.classList.add('on'); pcScrim.classList.add('on'); });
       if (pin) { pinned = true; pcFocus = document.activeElement; const h = $('.pc-hint', pc); if (h) h.remove(); $('.close', pc).focus({ preventScroll: true }); }
     }
@@ -154,7 +167,7 @@
     pc.addEventListener('click', e => {
       if (e.target.closest('.close')) { hidePop(true); return; }
       if (e.target.closest('[data-sheet]')) { hidePop(true); return; }
-      if (!pinned) { pinned = true; const h = $('.pc-hint', pc); if (h) h.remove(); }
+      if (!pinned) { pinned = true; pcScrim.classList.remove('peek'); const h = $('.pc-hint', pc); if (h) h.remove(); }
     });
     pcScrim.addEventListener('click', () => hidePop(true));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePop(true); });
