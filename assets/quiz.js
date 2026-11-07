@@ -134,7 +134,7 @@
       '<h3>' + fmt(score) + ' points</h3>' +
       '<p>' + correct + ' of ' + total + ' correct · a perfect, instant run would score ' + fmt(max) + '.</p>' +
       '<svg class="kq-podium" viewBox="0 0 320 150" aria-label="Podium"><rect x="20" y="70" width="80" height="80" rx="4" class="p2"/><rect x="120" y="40" width="80" height="110" rx="4" class="p1"/><rect x="220" y="90" width="80" height="60" rx="4" class="p3"/><text x="60" y="118">2</text><text x="160" y="92">1</text><text x="260" y="128">3</text><text class="you" x="160" y="30">' + (correct === total ? 'You' : correct >= total / 2 ? 'Nearly' : 'Try again') + '</text></svg>' +
-      '<p class="kq-small">In class the winning teams scored 17 914, 17 583 and 17 372 points over the whole quiz, and took home a Sleep Token.</p>' +
+      '<p class="kq-small">In class the top three learners scored 17 914, 17 583 and 17 372 points over the whole quiz, and took home a Sleep Token.</p>' +
       '<p class="kq-actions"><button type="button" class="kq-btn" data-restart="1">Play another round</button> <button type="button" class="kq-btn kq-ghost" data-sheet="memo">See the memorandum</button></p>' +
       '</div>';
   }
