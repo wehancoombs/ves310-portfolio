@@ -46,7 +46,7 @@ li { margin-bottom: .35rem; }
 .hint { font-size: 14px; color: var(--text-3); margin-top: 10px; }
 
 /* ---------- Top bar ---------- */
-.top { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 84%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+.top { position: sticky; top: 0; z-index: 50; background: color-mix(in srgb, var(--bg) 94%, transparent); border-bottom: 1px solid var(--line); }
 .top-inner { max-width: 1040px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; gap: 10px; position: relative; }
 .brand { font: 500 19px var(--serif); color: var(--text); border: 0; margin-right: auto; white-space: nowrap; }
 .brand span { color: var(--text-3); font: 400 14px var(--sans); }
@@ -452,8 +452,6 @@ main.lesson table th { color: var(--accent); }
 @media (max-width: 640px) { .lesson-hero { grid-template-columns: 1fr; justify-items: center; } }
 
 /* ---------- Gentle section snapping, profile layout, stages, Responsible AI ---------- */
-html { scroll-snap-type: y proximity; }
-.chapter { scroll-snap-align: start; scroll-snap-stop: normal; }
 .profile-grid { grid-template-columns: 1fr 1.25fr; }
 .arc-col .actions { margin-top: 14px; }
 #ai, [data-ch="ai"] { --accent: var(--make); }
@@ -519,9 +517,36 @@ html { scroll-snap-type: y proximity; }
 .ai-card li { opacity: 0; transform: translateX(-8px); transition: opacity .4s, transform .4s; }
 .ai-card.in li { opacity: 1; transform: none; }
 .ai-card.in li:nth-child(1) { transition-delay: .35s; } .ai-card.in li:nth-child(2) { transition-delay: .5s; } .ai-card.in li:nth-child(3) { transition-delay: .65s; } .ai-card.in li:nth-child(4) { transition-delay: .8s; }
-.ai-card .pc-ico svg { animation: breathe 3.5s ease-in-out infinite; }
 @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
 @media (prefers-reduced-motion: reduce) { .ai-card, .ai-card li { transition: none; opacity: 1; transform: none; } .ai-card .pc-ico svg { animation: none; } }
+
+/* ---------- Tech button row ---------- */
+.tech-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.tech-actions .btn { flex: 1 1 180px; justify-content: center; }
+/* ---------- Responsible AI: small icon animations ---------- */
+.ai-card .pc-ico svg path, .ai-card .pc-ico svg circle, .ai-card .pc-ico svg rect { transform-box: fill-box; transform-origin: center; }
+.ai-card.in .spark-big { animation: sparkspin 6s linear infinite; }
+.ai-card.in .spark-s1 { animation: twinkle 2.4s ease-in-out infinite; }
+.ai-card.in .spark-s2 { animation: twinkle 2.4s ease-in-out infinite 1.2s; }
+@keyframes sparkspin { to { transform: rotate(360deg); } }
+@keyframes twinkle { 0%, 100% { opacity: .2; transform: scale(.6); } 50% { opacity: 1; transform: scale(1.15); } }
+.ai-card.in .shackle { transform-origin: 8px 10px; animation: shackle 4s ease-in-out infinite; }
+@keyframes shackle { 0%, 55%, 100% { transform: translateY(0); } 25%, 35% { transform: translateY(-3px); } }
+.ai-card.in .keyhole { animation: keyglow 4s ease-in-out infinite; }
+@keyframes keyglow { 0%, 50%, 100% { opacity: .4; } 70% { opacity: 1; } }
+.ai-card.in .tick { stroke-dasharray: 20; stroke-dashoffset: 20; animation: draw 3s ease-in-out infinite; }
+@keyframes draw { 0% { stroke-dashoffset: 20; } 35%, 80% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 20; } }
+.ai-card.in .ring { animation: ringpulse 3s ease-in-out infinite; }
+@keyframes ringpulse { 0%, 100% { transform: scale(1); opacity: .7; } 40% { transform: scale(1.08); opacity: 1; } }
+.ai-card.in .arm-l { transform-origin: 12px 9px; animation: wave-l 2.6s ease-in-out infinite; }
+.ai-card.in .arm-r { transform-origin: 12px 9px; animation: wave-r 2.6s ease-in-out infinite; }
+.ai-card.in .leg-l { transform-origin: 12px 14px; animation: step-l 1.3s ease-in-out infinite; }
+.ai-card.in .leg-r { transform-origin: 12px 14px; animation: step-r 1.3s ease-in-out infinite; }
+@keyframes wave-l { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(18deg); } }
+@keyframes wave-r { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(-18deg); } }
+@keyframes step-l { 0%, 100% { transform: rotate(-6deg); } 50% { transform: rotate(8deg); } }
+@keyframes step-r { 0%, 100% { transform: rotate(6deg); } 50% { transform: rotate(-8deg); } }
+@media (prefers-reduced-motion: reduce) { .ai-card.in .pc-ico svg * { animation: none !important; } }
 
 @media print {
   :root { --bg: #fff; --bg-2: #f3f3f3; --surface: #fff; --line: #ccc; --line-2: #999; --text: #000; --text-2: #333; --text-3: #555; --gold: #7a5a10; --teach: #8a2f1e; --think: #1f3a5f; --make: #1f5a48; }

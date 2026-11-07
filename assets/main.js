@@ -174,6 +174,27 @@
     aiCards.forEach(c => aio.observe(c));
   } else aiCards.forEach(c => c.classList.add('in'));
 
+  /* ---------- Gentle settle: after scrolling stops near a chapter top, ease onto it ---------- */
+  const chapters = $$('.chapter[id]');
+  let settleTimer = null, settling = false;
+  const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (chapters.length && !reduced) {
+    window.addEventListener('scroll', () => {
+      if (settling || body.classList.contains('locked')) return;
+      clearTimeout(settleTimer);
+      settleTimer = setTimeout(() => {
+        const top = (document.querySelector('.top') || { offsetHeight: 0 }).offsetHeight;
+        let best = null, bestD = Infinity;
+        chapters.forEach(c => { const d = c.getBoundingClientRect().top - top; if (Math.abs(d) < Math.abs(bestD)) { bestD = d; best = c; } });
+        if (best && Math.abs(bestD) > 6 && Math.abs(bestD) < 110 && window.scrollY + window.innerHeight < document.body.scrollHeight - 10) {
+          settling = true;
+          window.scrollTo({ top: window.scrollY + bestD, behavior: 'smooth' });
+          setTimeout(() => { settling = false; }, 700);
+        }
+      }, 450);
+    }, { passive: true });
+  }
+
   /* ---------- Highlight the menu item for the chapter on screen ---------- */
   const secs = $$('.chapter[id]'), links = $$('.nav a[href^="#"]');
   if (secs.length && links.length && 'IntersectionObserver' in window) {
