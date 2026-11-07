@@ -167,6 +167,13 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePop(true); });
   }
 
+  /* ---------- Responsible AI cards: reveal on scroll ---------- */
+  const aiCards = $$('.ai-card');
+  if (aiCards.length && 'IntersectionObserver' in window) {
+    const aio = new IntersectionObserver(es => es.forEach(en => { if (en.isIntersecting) { en.target.classList.add('in'); aio.unobserve(en.target); } }), { threshold: .25 });
+    aiCards.forEach(c => aio.observe(c));
+  } else aiCards.forEach(c => c.classList.add('in'));
+
   /* ---------- Highlight the menu item for the chapter on screen ---------- */
   const secs = $$('.chapter[id]'), links = $$('.nav a[href^="#"]');
   if (secs.length && links.length && 'IntersectionObserver' in window) {
