@@ -49,7 +49,7 @@
       const steps = bar.parentElement.querySelector('ol.steps'); if (!steps) return;
       const segs = $$('span', bar), items = $$('li', steps);
       bar.classList.add('staged'); steps.classList.add('staged');
-      const pick = i => { segs.forEach((s2, k) => s2.classList.toggle('on', k === i)); items.forEach((li, k) => li.classList.toggle('on', k === i)); };
+      const pick = i => { segs.forEach((s2, k) => s2.classList.toggle('on', k === i)); items.forEach((li, k) => { li.dataset.n = k + 1; li.classList.toggle('on', k === i); }); };
       segs.forEach((s2, i) => { s2.setAttribute('role', 'button'); s2.setAttribute('tabindex', '0'); s2.addEventListener('click', () => pick(i)); s2.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(i); } }); });
       pick(0);
     });
@@ -156,14 +156,8 @@
     }
     $$('[data-pop]').forEach(el => {
       const id = el.dataset.pop;
-      el.addEventListener('mouseenter', () => { if (pinned) return; clearTimeout(pcTimer); pcTimer = setTimeout(() => showPop(id, false), 140); });
-      el.addEventListener('mouseleave', () => { clearTimeout(pcTimer); if (!pinned) pcTimer = setTimeout(() => hidePop(false), 260); });
       el.addEventListener('click', e => { e.preventDefault(); if (pinned && currentPop === id) hidePop(true); else showPop(id, true); });
-      el.addEventListener('focus', () => { if (!pinned) showPop(id, false); });
-      el.addEventListener('blur', () => { if (!pinned) hidePop(false); });
     });
-    pc.addEventListener('mouseenter', () => clearTimeout(pcTimer));
-    pc.addEventListener('mouseleave', () => { if (!pinned) pcTimer = setTimeout(() => hidePop(false), 260); });
     pc.addEventListener('click', e => {
       if (e.target.closest('.close')) { hidePop(true); return; }
       if (e.target.closest('[data-sheet]')) { hidePop(true); return; }
