@@ -70,7 +70,6 @@
       '<h3>The quiz, as the learners saw it</h3>' +
       '<p>Six rounds, 30 seconds a question, points for speed. Bonus and Gauntlet questions count double. Pick a round or play the whole thing.</p>' +
       '<div class="kq-rounds">' + ROUNDS.map(r => '<button type="button" class="kq-round" data-round="' + r.id + '"><b>' + r.id + '</b><span>' + esc(r.title) + '</span><small>' + esc(r.sub) + '</small></button>').join('') + '</div>' +
-      '<p class="kq-actions"><button type="button" class="kq-btn" data-round="all">Play all six rounds</button></p>' +
       '</div>';
   }
 
