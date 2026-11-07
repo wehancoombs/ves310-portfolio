@@ -1,0 +1,44 @@
+Copy everything below this line and paste it into your VES chat.
+==================================================================
+
+Status update on my VES 310 exam equivalent, Sections B and C (the digital portfolio), as of 4 November 2026. Deadline 14 November. Please check my checklist against the brief and rubric, tell me what a marker would still ding, and help me finish the open items in order of marks at stake.
+
+Portfolio: https://wehancoombs.github.io/ves310-portfolio/ (a website built from a copy of my personal site; all teaching content is my own, the site build was AI-assisted and acknowledged on the References page).
+
+WHAT IS DONE
+
+B1 Professional profile and CV (10): DONE
+- Short professional introduction on the home page; About me, Qualifications, Where I taught in 2026 (Abbotts College, Hoërskool Garsfontein), teaching strengths.
+- Current two-page school CV as a PDF; it links back to the portfolio.
+- School-facing teaching philosophy, taken from my CV and website wording.
+
+B2 Lesson plans and LTSM (15): DONE
+- Lesson 1: "The Poet" (A Midsummer Night's Dream), Grade 11 English Home Language, Literature: poetry, 28 August 2026. The lesson my UP mentor lecturer observed (98/100). LTSM 1: my two-page lesson notes with clue key, thought experiments and discussion questions (PDF).
+- Lesson 2: literary-essay preparation on Macbeth Acts 1 and 2, Grade 10 English Home Language, Writing. LTSM 2: my one-page revision sheet with PEEL guide and quotation bank (PDF).
+- Both plans give grade, CAPS context, outcomes, sequence with timings, learner participation, differentiation, assessment, reflection and references, as web pages and downloadable PDFs.
+- Extra: The Tempest Act 3 Scene 3 staged reading, kept as an additional lesson.
+
+B3 Assessment (10): DONE
+- My Grade 11 Term 3 revision quiz (Kahoot), 26 questions in six rounds, 36 marks: learner instructions, the full instrument, marking memorandum, and a note on feedback and differentiation. Playable on the site, plus PDF and the Kahoot import file. Three podium photos from the three classes as evidence, learner nicknames blurred.
+
+B4 Technology and under-resourced schools (10): DONE
+- Toolkit of five tools (Kahoot, PowerPoint presenter mode, subtitled video clips, Google Docs, a generative AI assistant), each with purpose and one limitation.
+- Activity: the Tempest Gauntlet on Kahoot, with instructions, import file and resources.
+- The same activity adapted for no internet, no devices, no printing (board, scrap paper, show of letters), same outcomes.
+- Note on responsible AI use, privacy, verification of AI output, accessibility.
+
+B5 Portfolio design and presentation (5): DONE
+- Menu with six chapters, working links, every resource downloadable or printable, opens for outside viewers (public GitHub Pages site, no UP-only links), works on phones. All links and downloads tested from outside.
+
+References and acknowledgements: DONE
+- APA reference list (CAPS, prescribed texts, RSC production, tools) and an AI-use acknowledgement; no learner names, images or work anywhere on the site.
+
+WHAT STILL NEEDS DOING
+
+1. Section C video (15 marks): "Professional Introduction and Teaching Showcase – Wehan Coombs", 3 to 5 minutes, not recorded yet. The home page has a frame ready for it. Needs: C1 introduction, motivation and strengths; C2 teaching philosophy in action with one real example (I plan to use The Poet lesson or the Macbeth essay lesson); C3 growth through VES 310, other modules and WIL, with one real challenge or strength; C4 clear voice, purposeful visuals, 3 to 5 minutes, playable by outsiders.
+2. Final read-through of the text in my own voice: the teaching philosophy, the AI-use acknowledgement, the differentiation paragraphs on both lessons, the quiz instructions and feedback note, and the toolkit entries were drafted from my own plans and need my final check.
+3. Confirm the exact editions/anthologies in the reference list (Macbeth, The Tempest, A Midsummer Night's Dream, the two poems) so the APA references match what the school uses.
+4. Section A (35 marks) is a separate Word document and is not part of the portfolio: teaching philosophy (one page), snapshots of learning (class notes, LTSM, textbook engagement), AI symposium reflection (200 to 250 words), Declaration of Originality, automated table of contents. Status: [fill in].
+5. Submission: upload the portfolio URL and the Section A document to the right clickUP links, and complete the Declaration of Originality.
+
+Questions for you: Is there anything in the rubric wording I am not covering? Is a playable quiz plus the memo enough for B3, or should the task be more formal? Does the "two different English teaching areas" requirement read as met with poetry (literature) plus a literary-essay writing lesson?

@@ -426,6 +426,31 @@ footer { border-top: 1px solid var(--line); background: var(--bg-2); }
 .pc-hint { font-size: 12.5px; color: var(--text-3); margin: 10px 0 0; }
 @media (max-width: 640px) { .popcard { padding: 20px 18px 18px; } }
 
+/* ---------- Book covers ---------- */
+.books { display: flex; gap: 28px; flex-wrap: wrap; align-items: flex-end; padding: 10px 0 18px; }
+.bookcover { --bk: var(--accent); all: unset; box-sizing: border-box; cursor: pointer; position: relative; display: block; width: 190px; height: 260px; border-radius: 4px 12px 12px 4px; background: linear-gradient(135deg, color-mix(in srgb, var(--bk) 85%, #fff) 0, var(--bk) 40%, color-mix(in srgb, var(--bk) 70%, #000) 100%); box-shadow: inset 8px 0 12px -8px rgba(0,0,0,.6), inset -2px 0 0 rgba(255,255,255,.12), 14px 16px 30px -14px #000; color: #fff; transition: transform .45s var(--ease), box-shadow .45s; text-decoration: none; transform: perspective(900px) rotateY(-8deg); }
+.bookcover:hover, .bookcover:focus-visible { transform: perspective(900px) rotateY(0) translateY(-8px); box-shadow: inset 8px 0 12px -8px rgba(0,0,0,.6), 22px 28px 40px -16px #000; }
+.bookcover.static { cursor: default; transform: perspective(900px) rotateY(-10deg); }
+.bookcover.static:hover { transform: perspective(900px) rotateY(-10deg); }
+.bc-spine { position: absolute; left: 10px; top: 0; bottom: 0; width: 1px; background: rgba(255,255,255,.25); }
+.bc-face { position: absolute; inset: 0; padding: 22px 18px 18px 28px; display: flex; flex-direction: column; }
+.bc-grade { font: 600 10.5px var(--sans); letter-spacing: .18em; text-transform: uppercase; opacity: .85; margin-bottom: auto; }
+.bookcover b { font: 500 30px/1.05 var(--serif); margin-bottom: 8px; }
+.bookcover i { font: italic 15px/1.3 var(--serif); opacity: .85; }
+.bc-open { margin-top: 14px; font: 600 12px var(--sans); letter-spacing: .1em; text-transform: uppercase; opacity: 0; transition: opacity .3s; }
+.bookcover:hover .bc-open, .bookcover:focus-visible .bc-open { opacity: 1; }
+.b-poet { --bk: #4E7A5A; } .b-mac { --bk: #8A3B2C; }
+@media (max-width: 600px) { .books { justify-content: center; } .bookcover { width: 160px; height: 220px; } .bookcover b { font-size: 24px; } }
+
+/* ---------- Lesson page hero ---------- */
+.lesson-hero { display: grid; grid-template-columns: 220px 1fr; gap: 32px; align-items: center; margin: 22px 0 10px; padding: 24px; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; }
+.lesson-hero .dl-cards { margin: 0; }
+.lesson-hero .dl.ltsm { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+main.lesson h2 { border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+main.lesson dl.meta { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; }
+main.lesson table th { color: var(--accent); }
+@media (max-width: 640px) { .lesson-hero { grid-template-columns: 1fr; justify-items: center; } }
+
 @media print {
   :root { --bg: #fff; --bg-2: #f3f3f3; --surface: #fff; --line: #ccc; --line-2: #999; --text: #000; --text-2: #333; --text-3: #555; --gold: #7a5a10; --teach: #8a2f1e; --think: #1f3a5f; --make: #1f5a48; }
   .top, footer, .btn, .no-print, .sheet, .scrim, .theme, .menu-btn { display: none !important; }
