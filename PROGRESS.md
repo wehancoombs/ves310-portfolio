@@ -18,7 +18,7 @@ A separate website, built from a copy of Wehan's personal site, for the VES 310 
 - `cv-source/`: the CV's source files. To re-render after editing `fet-cv.html`: `python render.py fet-cv.html "../cv/Wehan-Coombs-FET-CV.pdf"`.
 - `materials/`: downloadable LTSM and other resources (PDFs).
 - `downloads/`: lesson plan and assessment PDFs generated from the pages.
-- `video/`: the micro-lesson MP4 (compressed to 57 MB) and, later, the Section C video.
+- Videos: both the Section C introduction and the micro-lesson are streamed from YouTube (no video files in the repo).
 
 ## How to preview and publish
 
